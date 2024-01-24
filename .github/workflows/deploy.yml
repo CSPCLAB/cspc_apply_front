@@ -32,7 +32,7 @@ jobs:
           script: |
             cd ${{secrets.PATH}}
             npm run build
-            y | cp -arpf build/ ${{secrets.SERVER_PATH}}
+            y | cp -arpf build/ ${{secrets.SERVER_PATH}}/nginx
             cd ${{secrets.SERVER_PATH}}
             docker-compose down
             git pull origin main
