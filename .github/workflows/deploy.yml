@@ -31,6 +31,8 @@ jobs:
           port : ${{secrets.PORT}}
           script: |
             cd ${{secrets.PATH}}
+            git pull origin main
+            npm install
             npm run build
             y | cp -arpf build/ ${{secrets.SERVER_PATH}}/nginx
             cd ${{secrets.SERVER_PATH}}
