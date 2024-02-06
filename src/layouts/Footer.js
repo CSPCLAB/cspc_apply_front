@@ -22,7 +22,6 @@ const Footer = () => {
       get_master_info()
         .then((data) => {
           if (data != null) setMaster(data);
-          console.log(data);
           setLoading(false);
         })
         .catch((error) => {

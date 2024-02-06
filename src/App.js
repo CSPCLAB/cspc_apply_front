@@ -23,6 +23,11 @@ import { useAsync } from "react-async";
 
 import usePageTracking from "./hooks/ga_tracking";
 
+import ReactGA from "react-ga";
+
+const gaTrackingId = process.env.REACT_APP_GA_TRACKING_ID;
+ReactGA.initialize(gaTrackingId);
+
 const App = () => {
   usePageTracking();
   return (
