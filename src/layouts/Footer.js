@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
+import { get_master_info } from "apis/master";
 import "./Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,18 +16,18 @@ const Footer = () => {
 
   useEffect(() => {
     const fetchMaster = async () => {
-      try {
-        setError(null);
-        setMaster(null);
-        setLoading(true);
-        const response = await axios.get(
-          "https://apply.cspc.me/api/user/master",
-        );
-        setMaster(response.data);
-      } catch (e) {
-        setError(e);
-      }
-      setLoading(false);
+      setError(null);
+      setMaster(null);
+      setLoading(true);
+      get_master_info()
+        .then((data) => {
+          if (data != null) setMaster(data);
+          console.log(data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          setLoading(false);
+        });
     };
 
     fetchMaster();
