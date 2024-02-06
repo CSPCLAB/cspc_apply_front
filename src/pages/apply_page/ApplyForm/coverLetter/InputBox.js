@@ -1,24 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import './InputBox.css';
+import "./InputBox.css";
 
 const InputBox = ({ info, setContent, onChange, title, max }) => {
-    return (
-        <>
-            <textarea
-                id={title}
-                className="InputBox"
-                name={title}
-                value={info}
-                onChange={onChange}
-            ></textarea>
-            {max ?
-                <div>
-                    {info.length} / {max}
-                </div>
-                : null}
-        </>
-    );
+  return (
+    <>
+      <textarea
+        id={title}
+        className="InputBox"
+        name={title}
+        value={info}
+        onChange={onChange}
+      ></textarea>
+      {max ? (
+        <div>
+          {info.length} / {max}
+        </div>
+      ) : null}
+    </>
+  );
 };
 
 export default InputBox;

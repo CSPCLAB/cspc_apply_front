@@ -1,19 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './Components.css';
+import "./Components.css";
 
 const WriteApplication = () => {
-    return (
-        <div
-            className="WriteApplicationStyle"
-        >
-            <div
-                className="WriteApplicationWordStyle"
-            >
-                지원서 작성하기
-            </div>
-        </div>
-    );
+  return (
+    <div className="WriteApplicationStyle">
+      <div className="WriteApplicationWordStyle">지원서 작성하기</div>
+    </div>
+  );
 };
 
 export default WriteApplication;

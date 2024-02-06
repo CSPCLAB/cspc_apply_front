@@ -24,7 +24,7 @@ import { useAsync } from "react-async";
 import usePageTracking from "./hooks/ga_tracking";
 
 const App = () => {
-  usePageTracking();
+  //usePageTracking();
   return (
     <ScrollToTop>
       <Routes>
