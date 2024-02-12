@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { useAsync } from "react-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // layouts
 import MainLayout from "./layouts/MainLayout";
 import ApplyBanner from "./layouts/applyBanner/ApplyBanner";
+import ScrollToTop from "layouts/ScrollToTop";
 
 // pages
 import Main from "./pages/main_page/Main";
@@ -16,11 +18,12 @@ import ApplyGuide from "./pages/apply_page/applyGuide/ApplyGuide";
 import Not_allow_apply from "pages/Not_allow_page/Not_allow_apply";
 import { MiddleResult } from "pages/result_page/MiddleResult";
 import { FinalResult } from "pages/result_page/FinalResult";
-import ScrollToTop from "layouts/ScrollToTop";
 import NotFound from "pages/NotFound";
-import { get_recruit_info } from "apis/get_recruit";
-import { useAsync } from "react-async";
 
+// apis
+import { get_recruit_info } from "apis/get_recruit";
+
+// hooks
 import usePageTracking from "./hooks/ga_tracking";
 
 import ReactGA from "react-ga";
@@ -37,9 +40,7 @@ const App = () => {
           <Route path="*" element={<Navigate to="/error" />} />
           <Route path="/" element={<Main />} />
           <Route path="/error" element={<NotFound />} />
-          {/* 추가된 부분 */}
           <Route path="/introduce" element={<Introduce />} />
-          {/* apply페이지 경로 -> <Login /> */}
           <Route path="/notallow" element={<Not_allow_apply />} />
           <Route path="/apply" element={<ApplyCheck />} />
           <Route path="/login" element={<Login />} />
@@ -55,6 +56,7 @@ const App = () => {
   );
 };
 
+// ApplyPage 이동 권한 확인 후 이동
 const ApplyCheck = () => {
   const { data, error, isLoading } = useAsync({ promiseFn: get_recruit_info });
 
