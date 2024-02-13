@@ -1,0 +1,19 @@
+.MoreStory {
+    text-align: center;
+
+    width: 193px;
+    height: 49px;
+}
+
+.MoreStoryButton {
+    background: #000000;
+    color: #ffffff;
+
+    font-size: 15px;
+
+    width: 193px;
+    height: 49px;
+
+    border-radius: 33px;
+    border: none;
+}

@@ -123,11 +123,12 @@
     align-items: flex-end;
 }
 
-.ImgIntroduceStyle{
+.WhiteWord {
+    color: #ffffff;
+}
 
-    height: 356px;
-    
-    border-radius: 10px;
+.BlueWord {
+    color: #55A9BE;
 }
 
 /* .WhiteWord {

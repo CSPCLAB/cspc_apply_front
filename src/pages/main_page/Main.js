@@ -3,7 +3,6 @@ import React from "react";
 // components
 import ImgMain from "./ImgMain/ImgMain";
 import IntroduceMain from "./IntroduceMain/IntroduceMain";
-import MoreStory from "./MoreStory";
 import MainApplyCard from "./MainApplyCard";
 
 const Main = () => {
@@ -11,7 +10,6 @@ const Main = () => {
     <>
       <ImgMain />
       <IntroduceMain />
-      <MoreStory />
       <MainApplyCard />
     </>
   );
