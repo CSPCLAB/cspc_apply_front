@@ -1,19 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Apply from "../../apply_page/Apply";
+// import Apply from "../../apply_page/Apply";
 
-import "../Main.css";
+import "./GoToApply.css";
 
 const GoToApply = ({ top, left }) => {
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: top,
-        left: left,
-      }}
-    >
+    <div className="GoToApplyStyle" style={{ top: top, left: left }}>
       <Link to="/login">
         <button className="ButtonStyle">지원하기</button>
       </Link>
