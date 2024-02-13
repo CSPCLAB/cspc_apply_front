@@ -34,6 +34,7 @@ const ImgMain_3 = () => {
           </div>
         </div>
       </div>
+      <GoToApply top="876px" left="1417px" />
     </div>
   );
 };
