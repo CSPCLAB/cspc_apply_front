@@ -8,7 +8,7 @@ import { post_resume, update_resume } from "../../apis/resume";
 import NotFound from "pages/NotFound";
 //// pages
 //Login
-import { Login } from "../login_page/Main";
+import { Login } from "../login_page/Login";
 // First Login
 import ApplyFirst from "./ApplyFirst/ApplyFirst";
 // Second Login
@@ -70,7 +70,7 @@ const Apply = () => {
           etc: "",
           interview_requirement: "",
         }
-      : data,
+      : data
   );
 
   const postContent = async () => {
@@ -102,7 +102,7 @@ const Apply = () => {
     }
     if (contents.interview_time_choice.length == 0) {
       alert(
-        "면접시간을 최소 하나 선택해주세요.\n가능하신 시간이 없으면 학회장에게 문의해주세요.",
+        "면접시간을 최소 하나 선택해주세요.\n가능하신 시간이 없으면 학회장에게 문의해주세요."
       );
       return false;
     }

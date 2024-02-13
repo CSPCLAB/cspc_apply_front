@@ -1,7 +1,7 @@
 import { LoginForm } from "./components/LoginForm";
 import RecruitProcess from "./components/RecruitProcess";
 import { useAsync } from "react-async";
-import { get_recruit_info } from "./../../apis/get_recruit";
+import { get_recruit_info } from "../../apis/get_recruit";
 import Not_allow_apply from "pages/Not_allow_page/Not_allow_apply";
 export const Login = () => {
   const { data, error, isLoading } = useAsync({ promiseFn: get_recruit_info });
