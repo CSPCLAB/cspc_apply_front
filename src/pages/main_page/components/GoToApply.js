@@ -9,7 +9,7 @@ const GoToApply = ({ top, left }) => {
   return (
     <div className="GoToApplyStyle" style={{ top: top, left: left }}>
       <Link to="/login">
-        <button className="ButtonStyle">지원하기</button>
+        <button className="GoToButtonStyle">지원하기</button>
       </Link>
     </div>
   );

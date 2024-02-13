@@ -1,3 +1,24 @@
 .GoToApplyStyle {
     position: absolute;
 }
+
+.GoToButtonStyle {
+    width: 193px;
+    height: 49px;
+
+    background: #55a9be;
+    border-radius: 194.5px;
+    border: #55a9be;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    color: #ffffff;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.GoToButtonStyle:hover {
+    background: #ffffff;
+    color: #55a9be;
+}
