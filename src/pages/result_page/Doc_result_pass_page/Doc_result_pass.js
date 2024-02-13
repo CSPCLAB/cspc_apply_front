@@ -1,7 +1,9 @@
 import React from "react";
 import "./Doc_result_pass.css";
-import imgMap from "../img/map.png";
-import imgSpot from "../img/map-marker-Filled.png";
+
+import imgMap from "../../../assets/images/result/map.png";
+import imgSpot from "../../../assets/images/result/map-marker-Filled.png";
+
 import dateFormat, { masks } from "dateformat";
 
 const Doc_result_pass = ({ resume }) => {
