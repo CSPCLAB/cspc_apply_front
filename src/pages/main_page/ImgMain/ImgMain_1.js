@@ -10,7 +10,7 @@ const ImgMain_1 = () => {
   return (
     <div className="ImgMainBox">
       <img src={img_1} className="ImgMainStyle" />
-      <div className="LetterBox_1 WhiteWord Title">
+      <div className="ImgMainLetterBox_1 WhiteWord ImgMain_1_Title">
         2023 1학기 신입 부원 모집
       </div>
       <GoToApply top="866px" />

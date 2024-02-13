@@ -20,16 +20,20 @@
     height: 1005px;
 
     display: flex;
+
+    background-color: aqua;
     
     justify-content: center;
 }
 
 .ImgMainStyle {
+    position: absolute;
+
     width: 1920px;
     height: 1005px;
 }
 
-.BlackBackgroundStyle {
+.ImgMainBlackBackgroundStyle {
     /* position: "relative"; */
 
     width: 1920px;
@@ -38,7 +42,7 @@
     background: black;
 }
 
-.GrayFilterStyle {
+.ImgMainGrayFilterStyle {
     position: absolute;
 
     width: 1920px;
@@ -53,13 +57,15 @@
 }
 
 
-.LetterBox_1 {
+.ImgMainLetterBox_1 {
     position: absolute;
+
+    font-size: 24px;
 
     top: 805px;
 }
 
-.LetterBox_2 {
+.ImgMainLetterBox_2 {
     position: relative;
     text-align: left;
 
@@ -71,11 +77,11 @@
     height: 135px;
 }
 
-.LetterBox_2_1{
+.ImgMainLetterBox_2_1{
     display: inline-block;
 }
 
-.LetterBox_3 {
+.ImgMainLetterBox_3 {
     position: absolute;
 
     width: 1300px;
@@ -89,7 +95,7 @@
     top: 721px;
 }
 
-.LetterBox_3_1 {
+.ImgMainLetterBox_3_1 {
     position: relative;
 
     /* width: 341px; */
@@ -107,13 +113,25 @@
     color: #55A9BE;
 }
 
-.Title {
+.ImgMain_1_Title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%; 
+}
+
+.ImgMain_2_Title {
     font-weight: 700;
     font-size: 30px;
     line-height: 150%;
 }
 
-.Content {
+.ImgMain_3_Title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.ImgMain_3_Content {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;

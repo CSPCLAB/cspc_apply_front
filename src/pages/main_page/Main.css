@@ -17,43 +17,43 @@
     src: url('./components/fonts/IBMPlexSans-Regular.ttf');
 }
 
-.ImgMainStyle {
+/* .ImgMainStyle {
     position: relative;
     width: 1920px;
     height: 1005px;
-}
+} */
 
-.letterStyle_1 {
+/* .letterStyle_1 {
     position: absolute;
     color: #ffffff;
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
-}
+} */
 
-.letterStyle_2 {
+/* .letterStyle_2 {
     position: absolute;
     color: #ffffff;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-}
+} */
 
-.letterStyle_3 {
+/* .letterStyle_3 {
     position: absolute;
     color: #ffffff;
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
-}
+} */
 
-.letterStyle_4 {
+/* .letterStyle_4 {
     position: absolute;
     color: #ffffff;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-}
+} */
 
 .letterStyle_5 {
     height: 45px;
@@ -88,7 +88,6 @@
 
     color: #ffffff;
 
-    /* 그림자 */
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -131,7 +130,7 @@
     border-radius: 10px;
 }
 
-.WhiteWord {
+/* .WhiteWord {
     font-weight: 700;
     font-size: 30px;
     line-height: 150%;
@@ -145,4 +144,4 @@
     line-height: 150%;
 
     color: #55A9BE;
-}
+} */
