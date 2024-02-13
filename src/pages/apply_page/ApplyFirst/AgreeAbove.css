@@ -37,14 +37,14 @@
 }
 
 .checked{
-    background: url('../Components/img/checkedButton.png');
+    background: url('../../../assets/images/apply/checkedButton.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .unChecked{
-    background: url('../Components/img/unCheckedButton.png');
+    background: url('../../../assets/images/apply/unCheckedButton.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
