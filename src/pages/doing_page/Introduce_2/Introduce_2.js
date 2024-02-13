@@ -1,9 +1,10 @@
 import React from "react";
 import "../Introduce.css";
 import "./Introduce_2.css";
-import bookmark from "../../doing_page/img/bookmark.png";
-import desktop from "../../doing_page/img/desktop.png";
-import mapPin from "../../doing_page/img/map-pin.png";
+
+import bookmark from "../../../assets/images/doing/bookmark.png";
+import desktop from "../../../assets/images/doing/desktop.png";
+import mapPin from "../../../assets/images/doing/map-pin.png";
 
 const Introduce_2 = () => {
   return (

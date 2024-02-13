@@ -1,14 +1,16 @@
 import React from "react";
 import "../Introduce.css";
 import "./Introduce_4.css";
-import imgPicnic from "../../doing_page/img/picnic.png";
-import imgHaek from "../../doing_page/img/haek.png";
-import imgMt from "../../doing_page/img/mt.png";
-import imgDiscord from "../../doing_page/img/dic.png";
-import imgParty from "../../doing_page/img/party.png";
-import imgSemina from "../../doing_page/img/semina.jpg";
-import imgFoood from "../../doing_page/img/foood.jpg";
-import imgLogo from "../../doing_page/img/cspcLogo.png";
+
+// images
+import imgPicnic from "../../../assets/images/doing/picnic.png";
+import imgHaek from "../../../assets/images/doing/haek.png";
+import imgMt from "../../../assets/images/doing/mt.png";
+import imgParty from "../../../assets/images/doing/party.png";
+import imgSemina from "../../../assets/images/doing/semina.jpg";
+import imgFoood from "../../../assets/images/doing/food.jpg";
+import imgLogo from "../../../assets/images/doing/cspcLogo.png";
+
 import { Container, Row, Col } from "react-bootstrap";
 
 const Introduce_4 = () => {

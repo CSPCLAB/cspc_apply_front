@@ -2,10 +2,6 @@ import React from "react";
 import "../Introduce.css";
 import "./Introduce_3.css";
 import { Container, Row } from "react-bootstrap";
-import imgPicnic from "../../doing_page/img/picnic.png";
-import imgHaek from "../../doing_page/img/haek.png";
-import imgMt from "../../doing_page/img/mt.png";
-import imgParty from "../../doing_page/img/party.png";
 
 const Introduce_3 = () => {
   return (
