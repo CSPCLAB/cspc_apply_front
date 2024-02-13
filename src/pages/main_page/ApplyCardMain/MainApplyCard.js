@@ -1,8 +1,8 @@
 import React from "react";
 
-import img from "../../components/img/main_apply_img.png";
+import img from "../../../assets/images/main/main_apply_img.png";
 
-import GoToApply from "../../components/GoToApply";
+import GoToApply from "../components/GoToApply";
 
 import "./MainApplyCard.css";
 

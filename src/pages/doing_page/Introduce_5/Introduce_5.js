@@ -1,5 +1,5 @@
 import React from "react";
-import MainApplyCard from "../../main_page/IntroduceMain/ApplyCardMain/MainApplyCard";
+import MainApplyCard from "../../main_page/ApplyCardMain/MainApplyCard";
 import "../Introduce.css";
 import "./Introduce_5.css";
 

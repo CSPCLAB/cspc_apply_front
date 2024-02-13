@@ -1,6 +1,6 @@
 import React from "react";
 
-import img_3 from "../components/img/main_img_3.png";
+import img_3 from "../../../assets/images/main/main_img_3.png";
 
 import "../components/GoToApply";
 

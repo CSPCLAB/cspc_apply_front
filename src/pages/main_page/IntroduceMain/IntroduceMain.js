@@ -4,9 +4,9 @@ import "./IntroduceMain.css";
 import MoreStory from "./MoreStory";
 
 // image
-import img_picnic from "../components/img/main_img_picnic.png";
-import img_mt from "../components/img/main_img_mt.png";
-import img_party from "../components/img/main_img_party.png";
+import img_picnic from "../../../assets/images/main/main_img_picnic.png";
+import img_mt from "../../../assets/images/main/main_img_mt.png";
+import img_party from "../../../assets/images/main/main_img_party.png";
 
 const IntroduceMain = () => {
   return (

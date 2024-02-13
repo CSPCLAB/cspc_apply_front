@@ -1,8 +1,5 @@
 import React from "react";
 
-// 사용하지 않는 이미지 -> 삭제 필요
-import img_2 from "../components/img/main_img_2.png";
-
 import "./ImgMain.css";
 
 const ImgMain_2 = () => {
