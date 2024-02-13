@@ -4,12 +4,11 @@ import ImgMain_1 from "./ImgMain_1";
 import ImgMain_2 from "./ImgMain_2";
 import ImgMain_3 from "./ImgMain_3";
 
-// styles
-import "../Main.css";
+import "./ImgMain.css";
 
 const ImgMain = () => {
   return (
-    <div>
+    <div className="ImgMain">
       <ImgMain_1 />
       <ImgMain_2 />
       <ImgMain_3 />

@@ -1,0 +1,120 @@
+.ImgMain {
+    position: relative;
+
+    font-family: 'IBMPlexSans-Regular';
+    text-align: center;
+    font-style: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: black;
+}
+
+.ImgMainBox {
+    position: relative;
+
+    width: 1920px;
+    height: 1005px;
+
+    display: flex;
+    
+    justify-content: center;
+}
+
+.ImgMainStyle {
+    width: 1920px;
+    height: 1005px;
+}
+
+.BlackBackgroundStyle {
+    /* position: "relative"; */
+
+    width: 1920px;
+    height: 1005px;
+
+    background: black;
+}
+
+.GrayFilterStyle {
+    position: absolute;
+
+    width: 1920px;
+    height: 1005px;
+    /* height: 100%; */
+
+    display: flex;
+    justify-content: center;
+
+    /* background: rgba(100, 10, 200, 0.6); */
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+.LetterBox_1 {
+    position: absolute;
+
+    top: 805px;
+}
+
+.LetterBox_2 {
+    position: relative;
+    text-align: left;
+
+    top: 444px;
+    left: 310px;
+
+    /* width: 466px; */
+    width: 480px;
+    height: 135px;
+}
+
+.LetterBox_2_1{
+    display: inline-block;
+}
+
+.LetterBox_3 {
+    position: absolute;
+
+    width: 1300px;
+    height: 80px;
+
+    text-align: left;
+
+    justify-content: space-between;
+    display: flex;
+
+    top: 721px;
+}
+
+.LetterBox_3_1 {
+    position: relative;
+
+    /* width: 341px; */
+    width: 370px;
+
+    display: inline-block, ;
+    justify-content: left;
+}
+
+.WhiteWord {
+    color: #ffffff;
+}
+
+.BlueWord {
+    color: #55A9BE;
+}
+
+.Title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.Content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
