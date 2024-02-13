@@ -1,0 +1,38 @@
+.MainApplyCard {
+    position: relative;
+
+    text-align: center;
+    font-style: normal;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainApplyCardBox {
+    position: relative;
+
+    width: 1320px;
+    height: 420px;
+}
+
+.MainApplyCardImg {
+    width: 1300px;
+    height: 258px;
+
+    border-radius: 15px;
+}
+
+.MainApplyCardLetterBox {
+    position: absolute;
+
+    top: 70px;
+    left: 69px;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.WhiteWord {
+    color: #ffffff;
+}
