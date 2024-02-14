@@ -1,0 +1,106 @@
+.Main{
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    height: 2079px;
+}
+
+.frame{
+    position: relative;
+    width: 1299px;
+    height: 1603px;
+    left: 0px;
+    top: 0px;
+}
+
+.First{
+    position: absolute;
+    width: 367px;
+    height: 441px;
+    left: 0px;
+    top: 0px;
+}
+
+.picture{
+    position: absolute;
+    width: 367px;
+    height: 367px;
+    top: 0px;
+    border-radius: 10px;
+}
+
+.name1{
+    position: absolute;
+    top: 380px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.detail1{
+    position: absolute;
+    width: 365px;
+    height: 27px;
+    top: 414px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.num2{
+    left: 466px;
+}
+
+.num3{
+    left: 932px;
+}
+
+
+.Second{
+    position: absolute;
+    width: 367px;
+    height: 441px;
+    top: 581px;
+}
+
+.name2{
+    position: absolute;
+    top: 380px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.detail2{
+    position: absolute;
+    top: 421px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.Third{
+    position: absolute;
+    width: 367px;
+    height: 441px;
+    top: 1162px;
+}
+
+.name3{
+    position: absolute;
+    top: 380px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.detail3{
+    position: absolute;
+    top: 421px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}

@@ -1,0 +1,60 @@
+.black{
+    display: flex;
+    top: 75px;
+    flex-direction: column;
+    position: relative;
+    font-family: 'IBMPlexSans-Regular';
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSans-Regular';
+    src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf');
+}
+
+.not_allowbox{
+    position: relative;
+    width: 1300px;
+    height: 520px;
+}
+
+.not_allowlen1{
+    position: relative;
+    top: 88px;
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000;
+
+}
+
+.not_allowlen2{
+    position: relative;
+    top: 150px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: #000;
+}
+
+
+.newbox{
+    position: relative;
+    width: 1300px;
+    height: 40px;
+
+}
+.button_{
+    position: relative;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration: underline;
+
+    color: #000000;
+
+}
