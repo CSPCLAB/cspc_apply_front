@@ -1,12 +1,10 @@
 import React from "react";
 
-import img_3 from "../../../../assets/images/main/main_img_3.png";
-
-import "../GoToApply";
+import GoToApply from "../../../../components/GoToApply";
 
 import "../styles/ImgMain.css";
 
-import GoToApply from "../GoToApply";
+import img_3 from "../../../../assets/images/main/main_img_3.png";
 
 const ThirdImg = () => {
   return (

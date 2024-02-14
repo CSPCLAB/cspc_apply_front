@@ -2,7 +2,7 @@ import React from "react";
 
 import img_1 from "../../../../assets/images/main/main_img_1.png";
 
-import GoToApply from "../GoToApply";
+import GoToApply from "../../../../components/GoToApply";
 
 import "../styles/ImgMain.css";
 

@@ -1,10 +1,10 @@
 import React from "react";
 
-import img from "../../../assets/images/main/main_apply_img.png";
+import img from "../assets/images/main/main_apply_img.png";
 
 import GoToApply from "./GoToApply";
 
-import "./styles/MainApplyCard.css";
+import "./styles/ApplyCard.css";
 
 const MainApplyCard = () => {
   return (

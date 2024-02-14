@@ -7,7 +7,8 @@ import Info from "./components/Info";
 import Benefit from "./components/Benefit";
 import Elite from "./components/Elite";
 import ImgIntroduce from "./components/ImgIntroduce";
-import ApplyCardIntorduce from "./components/ApplyCardIntorduce";
+
+import ApplyCard from "../../components/ApplyCard";
 
 const Introduce = () => {
   return (
@@ -20,7 +21,7 @@ const Introduce = () => {
       <Benefit />
       <Elite />
       <ImgIntroduce />
-      <ApplyCardIntorduce />
+      <ApplyCard />
     </>
   );
 };

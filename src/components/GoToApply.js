@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import Apply from "../../apply_page/Apply";
-
 import "./styles/GoToApply.css";
 
 const GoToApply = ({ top, left }) => {
