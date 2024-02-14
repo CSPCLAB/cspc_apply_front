@@ -4,7 +4,7 @@ import img from "../../../assets/images/main/main_apply_img.png";
 
 import GoToApply from "./GoToApply";
 
-import "./styles//MainApplyCard.css";
+import "./styles/MainApplyCard.css";
 
 const MainApplyCard = () => {
   return (
