@@ -22,7 +22,7 @@ import ApplyComplete from "./components/Complete/ApplyComplete";
 import "./components/styles/Apply.css";
 
 // applybanner
-import ApplyBanner from "../../layouts/applyBanner/ApplyBanner";
+import ApplyBanner from "../../components/applyBanner/ApplyBanner";
 
 // Login.js에서 firstLogin 여부 확인해서 처리하기
 

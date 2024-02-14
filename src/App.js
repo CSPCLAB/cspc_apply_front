@@ -5,9 +5,9 @@ import { useAsync } from "react-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // layouts
-import MainLayout from "./layouts/MainLayout";
-import ApplyBanner from "./layouts/applyBanner/ApplyBanner";
-import ScrollToTop from "layouts/ScrollToTop";
+import MainLayout from "./components/MainLayout";
+import ApplyBanner from "./components/applyBanner/ApplyBanner";
+import ScrollToTop from "components/ScrollToTop";
 
 // pages
 import Main from "./pages/MainPage/Main";
