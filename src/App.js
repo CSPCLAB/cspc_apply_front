@@ -10,14 +10,14 @@ import ApplyBanner from "./layouts/applyBanner/ApplyBanner";
 import ScrollToTop from "layouts/ScrollToTop";
 
 // pages
-import Main from "./pages/main_page/Main";
-import Apply from "./pages/apply_page/Apply";
-import Introduce from "./pages/doing_page/Introduce";
-import { Login } from "./pages/login_page/Login";
-import ApplyGuide from "./pages/apply_page/applyGuide/ApplyGuide";
-import Not_allow_apply from "pages/Not_allow_page/Not_allow_apply";
-import { MiddleResult } from "pages/result_page/MiddleResult";
-import { FinalResult } from "pages/result_page/FinalResult";
+import Main from "./pages/MainPage/Main";
+import Apply from "./pages/ApplyPage/Apply";
+import Introduce from "./pages/IntroducePage/Introduce";
+import { Login } from "./pages/LoginPage/Login";
+import ApplyGuide from "./pages/ApplyPage/components/Guide/ApplyGuide";
+import Not_allow_apply from "pages/NotAllowPage/NotAllowApply";
+import { MiddleResult } from "pages/ResultPage/MiddleResult";
+import { FinalResult } from "pages/ResultPage/FinalResult";
 import NotFound from "pages/NotFound";
 
 // apis
@@ -43,7 +43,7 @@ const App = () => {
           <Route path="/introduce" element={<Introduce />} />
           <Route path="/notallow" element={<Not_allow_apply />} />
           <Route path="/apply" element={<ApplyCheck />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<LoginCheck />} />
 
           <Route element={<ApplyBanner />}>
             <Route path="/middle" element={<MiddleResult />} />
@@ -65,6 +65,17 @@ const ApplyCheck = () => {
   if (data) {
     if (data.process == "apply") return <Apply />;
     else return <Navigate to="/error" />;
+  }
+};
+
+const LoginCheck = () => {
+  const { data, error, isLoading } = useAsync({ promiseFn: get_recruit_info });
+
+  if (isLoading) return "Loading...";
+  if (error) return `Something went wrong: ${error.message}`;
+  if (data) {
+    if (data.process == "close") return <Not_allow_apply />;
+    else return <login />;
   }
 };
 
