@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { get_master_info } from "apis/master";
-import "./Footer.css";
+import "../styles/Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import axios from "axios";

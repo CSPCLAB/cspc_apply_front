@@ -5,10 +5,10 @@ import { useAsync } from "react-async";
 import dateFormat, { masks } from "dateformat";
 import { Link } from "react-router-dom";
 
-import { get_recruit_info } from "../../apis/get_recruit";
-import right_vector from "../../assets/images/right_vector.png";
+import { get_recruit_info } from "../apis/get_recruit";
+import right_vector from "../assets/images/right_vector.png";
 
-import "../styles/ApplyProgress.css";
+import "./styles/ApplyProgress.css";
 
 const ApplyProgress = () => {
   const { data, error, isLoading } = useAsync({ promiseFn: get_recruit_info });

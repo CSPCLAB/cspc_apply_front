@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import "./Banner.css";
+import "../styles/Banner.css";
 
 const Banner = ({ title }) => {
   return (

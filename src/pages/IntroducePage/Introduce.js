@@ -10,7 +10,7 @@ import ImgIntroduce from "./components/ImgIntroduce";
 
 import ApplyCard from "../../components/ApplyCard";
 
-import Banner from "../../components/Banner/Banner";
+import Banner from "../../components/Layouts/Banner";
 
 const Introduce = () => {
   return (

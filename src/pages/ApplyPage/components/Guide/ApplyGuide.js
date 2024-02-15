@@ -2,9 +2,9 @@ import React from "react";
 
 import "../../../IntroducePage/components/styles/Introduce.css";
 
-import Banner from "../../../../components/Banner/Banner";
+import Banner from "../../../../components/Layouts/Banner";
 import Culture from "./Culture";
-import ApplyProgress from "components/ApplyProgress/ApplyProgress";
+import ApplyProgress from "components/ApplyProgress";
 
 import ApplyGuide_2 from "./ApplyGuide_2";
 
