@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // layouts
 import MainLayout from "./components/MainLayout";
 import ApplyBanner from "./components/Banner/Banner";
-import ScrollToTop from "components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 // pages
 import Main from "./pages/MainPage/Main";

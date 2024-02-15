@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../styles/ApplyGuide_1.css";
+import "../styles/Culture.css";
 import "../styles/ApplyGuide.css";
 
 import guide1 from "../../../../assets/images/applyGuide/guide1.png";
@@ -10,7 +10,7 @@ import guide4 from "../../../../assets/images/applyGuide/guide4.png";
 import guide5 from "../../../../assets/images/applyGuide/guide5.png";
 import guide6 from "../../../../assets/images/applyGuide/guide6.png";
 
-const ApplyGuide_1 = () => {
+const Culture = () => {
   return (
     <div className="base">
       <div className="humanForm">
@@ -54,4 +54,4 @@ const ApplyGuide_1 = () => {
   );
 };
 
-export default ApplyGuide_1;
+export default Culture;
