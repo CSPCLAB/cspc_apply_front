@@ -10,12 +10,12 @@ import ImgIntroduce from "./components/ImgIntroduce";
 
 import ApplyCard from "../../components/ApplyCard";
 
+import Banner from "../../components/Banner/Banner";
+
 const Introduce = () => {
   return (
     <>
-      <div className="introducebanner">
-        <div className="bannerTitle">소개</div>
-      </div>
+      <Banner title="소개" />
 
       <Info />
       <Benefit />

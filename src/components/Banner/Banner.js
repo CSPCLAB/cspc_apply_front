@@ -1,14 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import "./ApplyBanner.css";
+import "./Banner.css";
 
-const ApplyBanner = () => {
+const Banner = ({ title }) => {
   return (
     <>
       <div className="applyBanner">
         <div className="applyBannerBox">
-          <div className="applyWordBanner">지원하기</div>
+          <div className="applyWordBanner">{title}</div>
         </div>
       </div>
       <Outlet />
@@ -16,4 +16,4 @@ const ApplyBanner = () => {
   );
 };
 
-export default ApplyBanner;
+export default Banner;

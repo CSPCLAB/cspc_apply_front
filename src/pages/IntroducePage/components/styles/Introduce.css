@@ -7,31 +7,6 @@
     align-items: center;
 }
 
-.introducebanner{
-    position: relative;
-    height: 173px;
-    left: 0%;
-    right: 0%;
-    top: 55px;
-    background: #000000;
-}
-
-.bannerTitle{
-    position: absolute;
-    left: 310px;
-    top: 71px;
-    font-family: 'IBMPlexSans-Regular';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /*Introduce.js에서 사용하는 기본 폰트*/
 @font-face {
     font-family: 'IBMPlexSans-Regular';
