@@ -4,7 +4,7 @@ import dateFormat, { masks } from "dateformat";
 
 import GoWriteApply from "../GoWriteApply";
 
-import "./ExistenceApplication.css";
+import "../styles/ExistenceApplication.css";
 
 const ExistenceApplication = ({ setPage, updateTime }) => {
   return (

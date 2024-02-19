@@ -5,12 +5,12 @@ import { get_recruit_info } from "apis/get_recruit";
 
 import dateFormat, { masks } from "dateformat";
 
-import "./CompleteMessage.css";
+import "../styles/CompleteMessage.css";
 
 const CompleteMessage = () => {
   const { data, error, isLoading } = useAsync(
     { promiseFn: get_recruit_info },
-    [],
+    []
   );
 
   // 서류결과 시간 api콜
@@ -31,7 +31,7 @@ const CompleteMessage = () => {
         <div className="CompleteContent">
           {dateFormat(
             data.announce_middle_time,
-            "서류 결과 안내는 m월 dd일 오후 h시 이후 홈페이지에서 알려드립니다.",
+            "서류 결과 안내는 m월 dd일 오후 h시 이후 홈페이지에서 알려드립니다."
           )}
         </div>
         <br />

@@ -6,7 +6,7 @@ import { get_master_info } from "apis/master";
 
 import "./components/styles/NotAllowApply.css";
 
-const Not_allow_apply = () => {
+const NotAllowApply = () => {
   const { data, error, isLoading } = useAsync({ promiseFn: get_master_info });
 
   if (isLoading) return "Loading...";
@@ -50,4 +50,4 @@ const Not_allow_apply = () => {
   }
 };
 
-export default Not_allow_apply;
+export default NotAllowApply;

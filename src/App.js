@@ -15,7 +15,7 @@ import Apply from "./pages/ApplyPage/Apply";
 import Introduce from "./pages/IntroducePage/Introduce";
 import { Login } from "./pages/LoginPage/Login";
 import ApplyGuide from "./pages/ApplyPage/components/Guide/ApplyGuide";
-import Not_allow_apply from "pages/NotAllowPage/NotAllowApply";
+import NotAllowApply from "pages/NotAllowPage/NotAllowApply";
 import { MiddleResult } from "pages/ResultPage/MiddleResult";
 import { FinalResult } from "pages/ResultPage/FinalResult";
 import NotFound from "pages/NotFound";
@@ -41,7 +41,7 @@ const App = () => {
           <Route path="/" element={<Main />} />
           <Route path="/error" element={<NotFound />} />
           <Route path="/introduce" element={<Introduce />} />
-          <Route path="/notallow" element={<Not_allow_apply />} />
+          <Route path="/notallow" element={<NotAllowApply />} />
           <Route path="/apply" element={<ApplyCheck />} />
           <Route path="/login" element={<LoginCheck />} />
 
@@ -74,8 +74,8 @@ const LoginCheck = () => {
   if (isLoading) return "Loading...";
   if (error) return `Something went wrong: ${error.message}`;
   if (data) {
-    if (data.process == "close") return <Not_allow_apply />;
-    else return <login />;
+    if (data.process == "close") return <NotAllowApply />;
+    else return <Login />;
   }
 };
 
