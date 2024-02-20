@@ -1,16 +1,16 @@
 import React from "react";
 
-import "../styles/ApplyGuide_2.css";
-import "../styles/ApplyGuide.css";
-
 import { Container, Row, Col } from "react-bootstrap";
-import { get_recruit_info } from "../../../../apis/get_recruit";
 import { useAsync } from "react-async";
 import dateFormat, { masks } from "dateformat";
-import right_vector from "../../../../assets/images/right_vector.png";
 import { Link } from "react-router-dom";
 
-const ApplyGuide_2 = () => {
+import { get_recruit_info } from "../apis/get_recruit";
+import right_vector from "../assets/images/right_vector.png";
+
+import "./styles/ApplyProgress.css";
+
+const ApplyProgress = () => {
   const { data, error, isLoading } = useAsync({ promiseFn: get_recruit_info });
 
   const format = "m/d";
@@ -61,4 +61,4 @@ const ApplyGuide_2 = () => {
     );
 };
 
-export default ApplyGuide_2;
+export default ApplyProgress;

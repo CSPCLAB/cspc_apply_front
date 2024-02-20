@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import "./TimeTable.css";
+import "../styles/TimeTable.css";
 
 const CheckBox = ({
   contents,
@@ -17,7 +17,7 @@ const CheckBox = ({
       setContent({
         ...contents,
         interview_time_choice: contents.interview_time_choice.filter(
-          (index) => index !== id,
+          (index) => index !== id
         ),
       });
     } else {
@@ -33,7 +33,7 @@ const CheckBox = ({
           ...contents,
           interview_time_choice: new Array(
             ...contents.interview_time_choice,
-            id,
+            id
           ),
         });
       }

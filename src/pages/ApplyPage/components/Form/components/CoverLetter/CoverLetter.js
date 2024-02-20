@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./CoverLetter.css";
+import "../styles/CoverLetter.css";
 
-import star from "../basicinfo/requiredInput.png";
+import star from "../../../../../../assets/images/apply/requiredInput.png";
 import InputBox from "./InputBox";
 
 const CoverLetter = ({

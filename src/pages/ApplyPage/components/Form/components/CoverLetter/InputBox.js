@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./InputBox.css";
+import "../styles/InputBox.css";
 
 const InputBox = ({ info, setContent, onChange, title, max }) => {
   return (

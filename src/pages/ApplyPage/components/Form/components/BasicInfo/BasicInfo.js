@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import RequiredName from "./components/RequiredName";
-import RequiredPhone from "./components/RequiredPhone";
-import RequiredStudentId from "./components/RequiredStudentId";
-import RequiredSemester from "./components/RequiredSemester";
+import RequiredName from "./RequiredName";
+import RequiredPhone from "./RequiredPhone";
+import RequiredStudentId from "./RequiredStudentId";
+import RequiredSemester from "./RequiredSemester";
 
-import "./BasicInfo.css";
+import "../styles/BasicInfo.css";
 
 const BasicInfo = ({
   contents = { contents },

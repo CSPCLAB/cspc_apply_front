@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import "./Banner.css";
+import "../styles/Header.css";
 
-const Banner = () => {
+const Header = () => {
   return (
     <>
       <Navbar sticky="top" varient="light" bg="white" expand="md">
@@ -36,4 +36,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Header;

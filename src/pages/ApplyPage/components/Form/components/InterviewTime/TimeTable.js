@@ -3,9 +3,9 @@ import { useState } from "react";
 import { useAsync } from "react-async";
 import dateFormat, { masks } from "dateformat";
 
-import { interview } from "../../../../../apis/interview";
+import { interview } from "../../../../../../apis/interview";
 
-import "./TimeTable.css";
+import "../styles/TimeTable.css";
 
 import CheckBox from "./CheckBox";
 

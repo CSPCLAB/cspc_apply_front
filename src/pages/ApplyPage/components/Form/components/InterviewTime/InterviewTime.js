@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 
-import "./InterviewTime.css";
+import "../styles/InterviewTime.css";
 
 import TimeTable from "./TimeTable";
 
-import star from "../basicinfo/requiredInput.png";
+import star from "../../../../../../assets/images/apply/requiredInput.png";
 
 const InterviewTime = ({ contents, setContent, uploadContent }) => {
   const onChange = (e) => {

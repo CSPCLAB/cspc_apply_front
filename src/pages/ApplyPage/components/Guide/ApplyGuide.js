@@ -2,17 +2,16 @@ import React from "react";
 
 import "../../../IntroducePage/components/styles/Introduce.css";
 
-import ApplyGuide_1 from "./ApplyGuide_1";
-import ApplyGuide_2 from "./ApplyGuide_2";
+import Banner from "../../../../components/Layouts/Banner";
+import Culture from "./Culture";
+import ApplyProgress from "components/ApplyProgress";
 
 const ApplyGuide = () => {
   return (
     <>
-      <div className="introducebanner">
-        <div className="bannerTitle">지원안내</div>
-      </div>
-      <ApplyGuide_1 />
-      <ApplyGuide_2 />
+      <Banner title="지원안내" />"
+      <Culture />
+      <ApplyProgress />
     </>
   );
 };

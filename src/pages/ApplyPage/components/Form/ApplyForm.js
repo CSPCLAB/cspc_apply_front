@@ -4,9 +4,9 @@ import axios from "axios";
 
 import WriteApplication from "../WriteApplication";
 import Steps from "../Steps";
-import BasicInfo from "./basicinfo/BasicInfo";
-import CoverLetter from "./coverLetter/CoverLetter";
-import InterviewTime from "./interviewTime/InterviewTime";
+import BasicInfo from "./components/BasicInfo/BasicInfo";
+import CoverLetter from "./components/CoverLetter/CoverLetter";
+import InterviewTime from "./components/InterviewTime/InterviewTime";
 
 const ApplyForm = ({ contents, setContent, uploadContent }) => {
   return (
