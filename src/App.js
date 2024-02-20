@@ -43,7 +43,8 @@ const App = () => {
           <Route path="/introduce" element={<Introduce />} />
           <Route path="/notallow" element={<NotAllowApply />} />
           <Route path="/apply" element={<ApplyCheck />} />
-          <Route path="/login" element={<LoginCheck />} />
+          {/* <Route path="/login" element={<LoginCheck />} /> */}
+          <Route path="/login" element={<Login />} />
 
           <Route element={<ApplyBanner />}>
             <Route path="/middle" element={<MiddleResult />} />

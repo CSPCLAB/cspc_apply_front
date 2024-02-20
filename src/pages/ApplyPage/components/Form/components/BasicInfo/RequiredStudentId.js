@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./Required.css";
+import "../styles/Required.css";
 
-import star from "../requiredInput.png";
+import star from "../../../../../../assets/images/apply/requiredInput.png";
 
 const RequiredStudentId = ({ userStudentId }) => {
   return (
