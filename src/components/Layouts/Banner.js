@@ -18,7 +18,11 @@ const Banner = () => {
       setCurPage("지원안내");
     } else if (path.startsWith("/introduce")) {
       setCurPage("소개");
-    } else if (path.startsWith("/apply")) {
+    } else if (
+      path.startsWith("/apply") ||
+      path.startsWith("/middle") ||
+      path.startsWith("/final")
+    ) {
       setCurPage("지원하기");
     } else if (path.startsWith("/login")) {
       setCurPage("login");
