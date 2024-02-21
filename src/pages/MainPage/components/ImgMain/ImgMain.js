@@ -5,6 +5,7 @@ import SecondImg from "./SecondImg";
 import ThirdImg from "./ThirdImg";
 
 import "../styles/ImgMain.css";
+import { isBrowser, isMobile } from "react-device-detect";
 
 const ImgMain = () => {
   return (

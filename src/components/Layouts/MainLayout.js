@@ -2,21 +2,19 @@ import React from "react";
 import Header from "./Header";
 import Banner from "./Banner";
 import Footer from "./Footer";
+
 import { Outlet } from "react-router-dom";
 
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+
+import { isBrowser, isMobile } from "react-device-detect";
 
 const MainLayout = () => {
-  var title = "title";
-
   return (
     <>
       <Header />
       <Banner />
-      <Container>
-        <Outlet />
-      </Container>
-      {/* <Outlet /> */}
+      <Outlet />
       <Footer />
     </>
   );
