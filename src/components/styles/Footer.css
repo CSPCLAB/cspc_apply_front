@@ -87,6 +87,10 @@
     left: 989px;
 }
 
+.footerPadding{
+    padding-top: 501px;
+}
+
 .lined{
     left: 0%;
     right: 0%;
