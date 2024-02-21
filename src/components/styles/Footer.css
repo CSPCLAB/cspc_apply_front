@@ -26,7 +26,16 @@
 .footerBox {
     position: relative;
 
-    width: 1300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    /* background: blue; */
+
+
+    /* width: 1300px; */
     height: 260px;
 }
 
@@ -76,13 +85,6 @@
 .help {
     top: 90px;
     left: 989px;
-}
-
-.email {
-    top: 90px;
-    right: 0px;
-
-    text-align: right;
 }
 
 .lined{

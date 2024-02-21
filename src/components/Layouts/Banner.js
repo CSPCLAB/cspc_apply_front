@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
+import { Container, Nav, Navbar } from "react-bootstrap";
+
 import "../styles/Banner.css";
 
 const Banner = () => {
@@ -30,11 +32,16 @@ const Banner = () => {
   else {
     return (
       <>
-        <div className="applyBanner">
+        {/* <div className="applyBanner">
           <div className="applyBannerBox">
             <div className="applyWordBanner">{curPage}</div>
           </div>
-        </div>
+        </div> */}
+        <Navbar expand="lg" className="applyBanner">
+          <Container>
+            <Nav className="applyWordBanner">{curPage}</Nav>
+          </Container>
+        </Navbar>
       </>
     );
   }
