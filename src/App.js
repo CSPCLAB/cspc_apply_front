@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useAsync } from "react-async";
@@ -37,26 +37,24 @@ const App = () => {
   usePageTracking();
   return (
     <ScrollToTop>
-      <Container fluid>
-        <Routes>
-          <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
-            <Route path="*" element={<Navigate to="/error" />} />
-            <Route path="/" element={<Main />} />
-            <Route path="/error" element={<NotFound />} />
-            <Route path="/introduce" element={<Introduce />} />
-            <Route path="/notallow" element={<NotAllowApply />} />
-            <Route path="/apply" element={<ApplyCheck />} />
-            {/* <Route path="/login" element={<LoginCheck />} /> */}
-            <Route path="/login" element={<Login />} />
+      <Routes>
+        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+          <Route path="*" element={<Navigate to="/error" />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/error" element={<NotFound />} />
+          <Route path="/introduce" element={<Introduce />} />
+          <Route path="/notallow" element={<NotAllowApply />} />
+          <Route path="/apply" element={<ApplyCheck />} />
+          {/* <Route path="/login" element={<LoginCheck />} /> */}
+          <Route path="/login" element={<Login />} />
 
-            <Route element={<ApplyBanner />}>
-              <Route path="/middle" element={<MiddleResult />} />
-              <Route path="/final" element={<FinalResult />} />
-            </Route>
-            <Route path="/applyGuide" element={<ApplyGuide />} />
+          <Route element={<ApplyBanner />}>
+            <Route path="/middle" element={<MiddleResult />} />
+            <Route path="/final" element={<FinalResult />} />
           </Route>
-        </Routes>
-      </Container>
+          <Route path="/applyGuide" element={<ApplyGuide />} />
+        </Route>
+      </Routes>
     </ScrollToTop>
   );
 };

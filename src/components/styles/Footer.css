@@ -1,16 +1,18 @@
 .footer{
-    position: relative;
+    /* position: relative;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     padding-top: 501px;
 
     font-family: 'IBMPlexSans-Regular';
     font-style: normal;
 
-    flex-direction: column;
+    /* flex-direction: column; */
+
+    height: 260px;
 }
 
 .footerLine {

@@ -9,7 +9,7 @@ import ApplyProgress from "components/ApplyProgress";
 const ApplyGuide = () => {
   return (
     <>
-      <Banner title="지원안내" />"
+      {/* <Banner title="지원안내" />" */}
       <Culture />
       <ApplyProgress />
     </>

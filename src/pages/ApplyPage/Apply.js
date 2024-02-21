@@ -22,7 +22,7 @@ import ApplyComplete from "./components/Complete/ApplyComplete";
 import "./components/styles/Apply.css";
 
 // Banner
-import Banner from "../../components/Layouts/Banner";
+// import Banner from "../../components/Layouts/Banner";
 
 // Login.js에서 firstLogin 여부 확인해서 처리하기
 
@@ -141,7 +141,7 @@ const Apply = () => {
     case 1:
       return (
         <>
-          <Banner title="소개" />
+          {/* <Banner title="지원하기" /> */}
           <div className="ApplyStyle">
             <ApplyFirst setPage={setPage} />
           </div>
@@ -150,7 +150,7 @@ const Apply = () => {
     case 2:
       return (
         <>
-          <Banner title="소개" />
+          {/* <Banner title="지원하기" /> */}
           <div className="ApplyStyle">
             <ApplySecond setPage={setPage} updateTime={data.updated_at} />
           </div>
@@ -159,7 +159,7 @@ const Apply = () => {
     case 3:
       return (
         <Provider>
-          <Banner title="소개" />
+          {/* <Banner title="지원하기" /> */}
           <div className="ApplyStyle">
             <ApplyForm
               isFirst={isFirst}
@@ -173,7 +173,7 @@ const Apply = () => {
     case 4:
       return (
         <>
-          <Banner title="소개" />
+          {/* <Banner title="지원하기" /> */}
           <div className="ApplyStyle">
             <ApplyComplete />
           </div>
