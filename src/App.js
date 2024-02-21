@@ -4,6 +4,8 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useAsync } from "react-async";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import { Container, Row, Col } from "react-bootstrap";
+
 // layouts
 import MainLayout from "./components/Layouts/MainLayout";
 import ApplyBanner from "./components/Layouts/Banner";
@@ -35,24 +37,26 @@ const App = () => {
   usePageTracking();
   return (
     <ScrollToTop>
-      <Routes>
-        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
-          <Route path="*" element={<Navigate to="/error" />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/error" element={<NotFound />} />
-          <Route path="/introduce" element={<Introduce />} />
-          <Route path="/notallow" element={<NotAllowApply />} />
-          <Route path="/apply" element={<ApplyCheck />} />
-          {/* <Route path="/login" element={<LoginCheck />} /> */}
-          <Route path="/login" element={<Login />} />
+      <Container fluid>
+        <Routes>
+          <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+            <Route path="*" element={<Navigate to="/error" />} />
+            <Route path="/" element={<Main />} />
+            <Route path="/error" element={<NotFound />} />
+            <Route path="/introduce" element={<Introduce />} />
+            <Route path="/notallow" element={<NotAllowApply />} />
+            <Route path="/apply" element={<ApplyCheck />} />
+            {/* <Route path="/login" element={<LoginCheck />} /> */}
+            <Route path="/login" element={<Login />} />
 
-          <Route element={<ApplyBanner />}>
-            <Route path="/middle" element={<MiddleResult />} />
-            <Route path="/final" element={<FinalResult />} />
+            <Route element={<ApplyBanner />}>
+              <Route path="/middle" element={<MiddleResult />} />
+              <Route path="/final" element={<FinalResult />} />
+            </Route>
+            <Route path="/applyGuide" element={<ApplyGuide />} />
           </Route>
-          <Route path="/applyGuide" element={<ApplyGuide />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </Container>
     </ScrollToTop>
   );
 };

@@ -12,8 +12,8 @@ const Header = () => {
         sticky="top"
         // bg="light"
         expand="lg"
-        // className="justify-content-center header"
-        // id="header"
+        className="justify-content-center"
+        id="header"
       >
         <Container fluid id="headerBox">
           <Navbar.Brand href="/" id="headerbrand" className="ml-auto">
