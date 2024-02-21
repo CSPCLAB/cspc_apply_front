@@ -28,15 +28,20 @@ import { get_recruit_info } from "apis/get_recruit";
 // hooks
 import usePageTracking from "./hooks/ga_tracking";
 
-import ReactGA from "react-ga";
-
-const gaTrackingId = process.env.REACT_APP_GA_TRACKING_ID;
-ReactGA.initialize(gaTrackingId);
+import { isBrowser, isMobile } from "react-device-detect";
 
 const App = () => {
   usePageTracking();
   return (
     <ScrollToTop>
+      <RenderContent />
+    </ScrollToTop>
+  );
+};
+
+const RenderContent = () => {
+  if (isBrowser) {
+    return (
       <Routes>
         <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
           <Route path="*" element={<Navigate to="/error" />} />
@@ -48,15 +53,38 @@ const App = () => {
           {/* <Route path="/login" element={<LoginCheck />} /> */}
           <Route path="/login" element={<Login />} />
 
-          <Route element={<ApplyBanner />}>
-            <Route path="/middle" element={<MiddleResult />} />
-            <Route path="/final" element={<FinalResult />} />
-          </Route>
+          {/* <Route element={<ApplyBanner />}> */}
+          <Route path="/middle" element={<MiddleResult />} />
+          <Route path="/final" element={<FinalResult />} />
+          {/* </Route> */}
           <Route path="/applyGuide" element={<ApplyGuide />} />
         </Route>
       </Routes>
-    </ScrollToTop>
-  );
+    );
+  }
+
+  if (isMobile) {
+    return (
+      <Routes>
+        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+          <Route path="*" element={<Navigate to="/error" />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/error" element={<NotFound />} />
+          <Route path="/introduce" element={<Introduce />} />
+          <Route path="/notallow" element={<NotAllowApply />} />
+          <Route path="/apply" element={<ApplyCheck />} />
+          {/* <Route path="/login" element={<LoginCheck />} /> */}
+          <Route path="/login" element={<Login />} />
+
+          {/* <Route element={<ApplyBanner />}> */}
+          <Route path="/middle" element={<MiddleResult />} />
+          <Route path="/final" element={<FinalResult />} />
+          {/* </Route> */}
+          <Route path="/applyGuide" element={<ApplyGuide />} />
+        </Route>
+      </Routes>
+    );
+  }
 };
 
 // ApplyPage 이동 권한 확인 후 이동
