@@ -13,7 +13,7 @@
 .ImgMainBox {
     position: relative;
 
-    width: 1920px;
+    width: 100%;
     height: 1005px;
 
     /* width: 100%; */
@@ -39,16 +39,16 @@
 .ImgMainBlackBackgroundStyle {
     /* position: "relative"; */
 
-    width: 1920px;
+    width: 100%;
     height: 1005px;
-
+    padding: 30px 10px;
     background: black;
 }
 
 .ImgMainGrayFilterStyle {
     position: absolute;
 
-    width: 1920px;
+    width: 100%;
     height: 1005px;
     /* height: 100%; */
 
@@ -66,7 +66,7 @@
     font-size: 24px;
     font-weight: bold;
 
-    top: 805px;
+    bottom: 120px;
 }
 
 .ImgMainLetterBox_2 {
@@ -75,12 +75,13 @@
 
     font-weight: bold;
 
-    top: 444px;
-    left: 310px;
 
     /* width: 466px; */
-    width: 480px;
+    width: 100%;
     height: 135px;
+    padding-top: 20%;
+    padding-left: 5%;
+
 }
 
 .ImgMainLetterBox_2_1{
@@ -88,31 +89,32 @@
 }
 
 .ImgMainLetterBox_3 {
-    position: absolute;
 
-    width: 1300px;
+    position: absolute;
+    width: 60%;
     height: 80px;
 
     text-align: left;
 
-    justify-content: space-between;
-    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    bottom: 220px;
 
-    top: 721px;
 }
 
 .ImgMainLetterBox_3_1 {
     position: relative;
 
     /* width: 341px; */
-    width: 370px;
-
+    width: 20%;
+    
     display: inline-block;
     justify-content: left;
+    
 }
 
 .WhiteWord {
     color: #ffffff;
+    
 }
 
 .BlueWord {
@@ -142,3 +144,21 @@
     font-size: 20px;
     line-height: 150%;
 }
+
+/* 모바일 장치를 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+    .ImgMainBox, .ImgMainBlackBackgroundStyle, .ImgMainGrayFilterStyle {
+        height: 450px; /* 모바일 환경에서의 높이 조정 */
+    }
+    .ImgMain_3_Title {
+        font-size: 18px; /* 모바일에서 줄인 글씨 크기 */
+    }
+
+    .ImgMain_3_Content {
+        font-size: 12px; /* 모바일에서 줄인 글씨 크기 */
+    }
+    .ImgMainLetterBox_3{
+        width: 100%;
+    }
+}
+
