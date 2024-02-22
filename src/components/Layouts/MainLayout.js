@@ -21,14 +21,5 @@ const MainLayout = () => {
     </>
   );
 };
-return (
-  <>
-    <Header />
-    <Banner />
-    <Outlet />
-    {isBrowser ? <Footer /> : <MobileFooter />}
-  </>
-)
-}
 
 export default MainLayout
