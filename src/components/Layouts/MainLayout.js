@@ -15,8 +15,8 @@ const MainLayout = () => {
   return (
     <>
       <Header />
-      {/* <Banner /> */}
-      {/* <Outlet /> */}
+      <Banner />
+      <Outlet />
       {isBrowser ? <Footer /> : <MobileFooter />}
     </>
   );

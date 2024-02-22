@@ -20,7 +20,7 @@ const Introduce = () => {
           <Benefit />
           <Elite />
           <ImgIntroduce />
-          {/* <ApplyCard /> */}
+          {/* <ApplyCard / */}
         </Col>
       </Row>
     </Container>

@@ -46,9 +46,9 @@ const ImgIntroduce = () => {
 
 
   return (
-    <div className="mobile_base_">
+    <div>
       <img className="picture_" src={images[currentIndex]} />
-      <div className="detail1_">{sentences[currentIndex]}</div>
+      <div className="detail_">{sentences[currentIndex]}</div>
     </div>
   );
 
