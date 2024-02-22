@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./styles/Components.css";
 
 import StepButton from "./StepButton";
+import { isBrowser, isMobile } from "react-device-detect";
 
 const Steps = ({ agree, write, apply }) => {
   return (

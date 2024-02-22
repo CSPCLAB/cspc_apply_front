@@ -7,6 +7,17 @@
     height: 1355px;
 }
 
+.MobileInterviewTime {
+    position: relative;
+
+    top: 152px;
+
+    width: 90vw;
+
+    /* width: 1300px; */
+    /* height: 1355px; */
+}
+
 .InterviewBox {
     position: relative;
     margin-bottom: 95px;
@@ -19,9 +30,24 @@
     border: 1px solid #000000;
 }
 
+.MobileInterviewLine {
+    width: 90vw;
+    height: 0px;
+
+    border: 1px solid #000000;
+}
+
 .InterviewTitle {
     font-weight: 700;
     font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+}
+
+.MobileInterviewTitle {
+    font-weight: 700;
+    font-size: 16px;
     line-height: 26px;
 
     color: #000000;
@@ -56,6 +82,18 @@
     border-bottom: 1px solid #000000;
 }
 
+.MobileRequirement {
+    /* width: 650px; */
+    width: 90vw;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000000;
+
+    border-radius: none;
+}
+
 .InterviewCheck {
     display: flex;
     justify-content: center;
@@ -67,6 +105,33 @@
 
     width: 1300px;
     height: 128px;
+}
+
+.MobileInterviewCheck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    position: relative;
+
+    margin-bottom: 50vh;
+
+    /* width: 1300px; */
+    width: 90vw;
+}
+
+.InterviewCheckMessage {
+    position: relative;
+
+    height: 26px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
 }
 
 .InterviewCheckMessage {
@@ -87,6 +152,25 @@
     top: 50px;
 
     width: 350px;
+    height: 52px;
+
+    background: #000000;
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.MobileInterviewCheckButton {
+    position: relative;
+
+    /* width: 350px; */
+    width: 70vw;
     height: 52px;
 
     background: #000000;

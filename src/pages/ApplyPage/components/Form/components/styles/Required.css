@@ -59,6 +59,19 @@
     text-align: center;
 }
 
+.mobileSemester {
+    /* width: 60px; */
+    width: 18vw;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: rgba(0, 0, 0);
+
+    text-align: center;
+}
+
 .SemesterStandard {
     position: relative;
 
@@ -66,6 +79,19 @@
 
     font-weight: 400;
     font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+
+    opacity: 0.3;
+}
+
+.MobileSemesterStandard {
+    position: relative;
+
+
+    font-weight: 400;
+    font-size: 16px;
     line-height: 26px;
 
     color: #000000;

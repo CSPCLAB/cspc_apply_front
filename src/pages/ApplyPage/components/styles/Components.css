@@ -54,6 +54,19 @@
     border-bottom: solid 1px #000000;
 }
 
+.MobileStepButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 433.33px; */
+    /* height: 48px; */
+    width: 30vw;
+    height: 5vh;
+
+    border-bottom: solid 1px #000000;
+}
+
 .Selected {
     background: #000000;
     color: #ffffff;

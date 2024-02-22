@@ -8,3 +8,15 @@
 
     resize: none;
 }
+
+.MobileInputBox {
+    /* width: 1300px; */
+    width: 90vw;
+    height: 20vh;
+
+    box-sizing: border-box;
+
+    border: 1px solid #000000;
+
+    resize:vertical;
+}
