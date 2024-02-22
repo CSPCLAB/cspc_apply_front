@@ -73,7 +73,7 @@ const RenderContent = () => {
           <Route path="*" element={<Navigate to="/error" />} />
           <Route path="/" element={<Main />} />
           <Route path="/error" element={<NotFound />} />
-          <Route path="/introduce2" element={<Introduce2 />} />
+          <Route path="/introduce" element={<Introduce2 />} />
           <Route path="/notallow" element={<NotAllowApply />} />
           <Route path="/apply" element={<ApplyCheck />} />
           {/* <Route path="/login" element={<LoginCheck />} /> */}

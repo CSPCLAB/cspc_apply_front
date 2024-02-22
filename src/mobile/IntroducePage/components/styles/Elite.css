@@ -1,0 +1,84 @@
+.mobile_base_ {
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.picFrame_ {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 153px 0px;
+    gap: 50px;
+    /*50*/
+    width: 1900%;
+    height: 324px;
+    left: 0px;
+    top: 0px;
+}
+
+.picIntro_ {
+    position: absolute;
+    width: 380px;
+    height: 71px;
+    top: 300px;
+}
+
+.picIntro1_ {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 230%;
+}
+
+.picIntro2_ {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.sepLine_ {
+    position: absolute;
+    width: 380px;
+    height: 0px;
+    top: 340px;
+    border: 0.3px solid #000000;
+}
+
+
+
+
+
+/*
+.picturesForm{  
+    position: relative;
+    width: 1299px;
+    height: 1603px;
+    top: 1422px;
+}
+
+.pictureMain{
+    position: absolute;
+    text-align: center;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pic{
+    position: absolute;
+width: 367px;
+height: 367px;
+left: 0px;
+top: 0px;
+
+border-radius: 10px;
+}*/

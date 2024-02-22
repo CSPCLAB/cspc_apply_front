@@ -13,9 +13,9 @@ const MainLayout = () => {
   return (
     <>
       <Header />
-      <Banner />
+      {/* <Banner /> */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
