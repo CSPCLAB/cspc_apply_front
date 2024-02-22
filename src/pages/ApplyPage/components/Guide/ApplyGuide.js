@@ -23,7 +23,7 @@ const Mobile_ApplyGuide = () => {
     <>
       {/* <Banner title="지원안내" />" */}
       <Mobile_Culture />
-      {/* <Mobile_ApplyProgress /> */}
+      <Mobile_ApplyProgress />
     </>
   );
 };
