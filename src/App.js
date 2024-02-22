@@ -25,7 +25,6 @@ import NotFound from "pages/NotFound";
 //mobile pages
 import Introduce2 from "./mobile/IntroducePage/Introduce";
 
-
 // apis
 import { get_recruit_info } from "apis/get_recruit";
 
