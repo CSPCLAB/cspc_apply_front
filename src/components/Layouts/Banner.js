@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 
 import { Container, Nav, Navbar } from "react-bootstrap";
 
+import { isBrowser, isMobile } from "react-device-detect";
+
 import "../styles/Banner.css";
 
 const Banner = () => {
@@ -36,16 +38,19 @@ const Banner = () => {
   else {
     return (
       <>
-        {/* <div className="applyBanner">
-          <div className="applyBannerBox">
-            <div className="applyWordBanner">{curPage}</div>
-          </div>
-        </div> */}
-        <Navbar expand="lg" className="applyBanner">
-          <Container>
-            <Nav className="applyWordBanner">{curPage}</Nav>
-          </Container>
-        </Navbar>
+        {isBrowser ? (
+          <Navbar expand="lg" className="applyBanner">
+            <Container>
+              <Nav className="applyWordBanner">{curPage}</Nav>
+            </Container>
+          </Navbar>
+        ) : (
+          <Navbar expand="lg" className="mobileApplyBanner">
+            <Container>
+              <Nav className="applyWordBanner">{curPage}</Nav>
+            </Container>
+          </Navbar>
+        )}
       </>
     );
   }
