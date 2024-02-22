@@ -9,6 +9,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Container, Row, Col, Navbar } from "react-bootstrap";
 
+import { isMobile, isBrowser } from "react-device-detect";
+
 import axios from "axios";
 
 const Footer = () => {
@@ -62,32 +64,6 @@ const Footer = () => {
         </Container>
       </Navbar>
     </>
-
-    // <div className="footer">
-    //   <div className="footerLine" />
-    //   <div className="footerBox">
-    //     <Link to="/">
-    //       <div className="cspc">CSPC</div>
-    //     </Link>
-    //     <Link to="/introduce">
-    //       <div className="footerWord introduce">소개</div>
-    //     </Link>
-    //     <Link to="/applyGuide">
-    //       <div className="footerWord applyHelp">지원안내</div>
-    //     </Link>
-    //     <Link to="/login">
-    //       <div className="footerWord apply">지원하기</div>
-    //     </Link>
-    //     <div className="footerWord school">서강대학교 리치과학관 914호</div>
-    //     <div className="footerWord help">문의</div>
-    //     {/* 이름과 이메일 api콜 필요 */}
-    //     <div className="footerWord email">
-    //       {master === null
-    //         ? "학회장 OOO abc@gmail.com"
-    //         : "학회장 " + master.name + " " + master.email}
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
