@@ -62,7 +62,7 @@ const MobileFooter = () => {
               </Row>
             </Col>
           </Row>
-          <Row>
+          <Row className="mt-3">
             <Col>서강대학교 리치과학관 914호 </Col>
           </Row>
           <Col>

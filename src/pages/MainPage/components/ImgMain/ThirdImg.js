@@ -16,7 +16,7 @@ const ThirdImg = () => {
                         <div className="WhiteWord ImgMain_3_Title">
                             랩실관리
                         </div>
-                        <div className="WhiteWord ImgMain_3_Content">
+                        <div className="mt-2 WhiteWord ImgMain_3_Content">
                             리치과학관 914호를 관리합니다.
                         </div>
                     </Col>
@@ -32,7 +32,7 @@ const ThirdImg = () => {
                         <div className="WhiteWord ImgMain_3_Title">
                             선배 찬스
                         </div>
-                        <div className="WhiteWord ImgMain_3_Content">
+                        <div className="mt-2 WhiteWord ImgMain_3_Content">
                             언제든 물어볼 수 있는 선배가 있어 든든합니다.
                         </div>
                     </Col>
