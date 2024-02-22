@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./styles/Components.css";
+import { isBrowser, isMobile } from "react-device-detect";
 
 const GoWriteApply = ({ isChecked, first, second, setPage }) => {
   // isChecked=true 일 때만 이동
@@ -17,11 +18,19 @@ const GoWriteApply = ({ isChecked, first, second, setPage }) => {
     }
   };
 
-  return (
-    <button className="GoWriteApply" onClick={goWrite}>
-      지원서 작성하기
-    </button>
-  );
+  if (isBrowser) {
+    return (
+      <button className="GoWriteApply" onClick={goWrite}>
+        지원서 작성하기
+      </button>
+    );
+  } else if (isMobile) {
+    return (
+      <button className="MobileGoWriteApply" onClick={goWrite}>
+        지원서 작성하기
+      </button>
+    );
+  }
 };
 
 export default GoWriteApply;
