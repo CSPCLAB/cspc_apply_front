@@ -44,12 +44,20 @@ const ImgIntroduce = () => {
   }, []);
 
 
-
   return (
-    <div>
-      <img className="picture_" src={images[currentIndex]} />
-      <div className="detail_">{sentences[currentIndex]}</div>
-    </div>
+    <Container>
+      <Row>
+        <Col>
+          <img className="picture_" src={images[currentIndex]} />
+        </Col>
+      </Row>
+      <Row>
+        <Col className="mt-3">
+          <div className="detail_">{sentences[currentIndex]}</div>
+        </Col>
+      </Row>
+
+    </Container>
   );
 
 };
