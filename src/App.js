@@ -40,26 +40,49 @@ const App = () => {
 };
 
 const RenderContent = () => {
-  return (
-    <Routes>
-      <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
-        <Route path="*" element={<Navigate to="/error" />} />
-        <Route path="/" element={<Main />} />
-        <Route path="/error" element={<NotFound />} />
-        <Route path="/introduce" element={<Introduce />} />
-        <Route path="/notallow" element={<NotAllowApply />} />
-        <Route path="/apply" element={<ApplyCheck />} />
-        {/* <Route path="/login" element={<LoginCheck />} /> */}
-        <Route path="/login" element={<Login />} />
+  if (isBrowser) {
+    return (
+      <Routes>
+        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+          <Route path="*" element={<Navigate to="/error" />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/error" element={<NotFound />} />
+          <Route path="/introduce" element={<Introduce />} />
+          <Route path="/notallow" element={<NotAllowApply />} />
+          <Route path="/apply" element={<ApplyCheck />} />
+          {/* <Route path="/login" element={<LoginCheck />} /> */}
+          <Route path="/login" element={<Login />} />
 
-        {/* <Route element={<ApplyBanner />}> */}
-        <Route path="/middle" element={<MiddleResult />} />
-        <Route path="/final" element={<FinalResult />} />
-        {/* </Route> */}
-        <Route path="/applyGuide" element={<ApplyGuide />} />
-      </Route>
-    </Routes>
-  );
+          {/* <Route element={<ApplyBanner />}> */}
+          <Route path="/middle" element={<MiddleResult />} />
+          <Route path="/final" element={<FinalResult />} />
+          {/* </Route> */}
+          <Route path="/applyGuide" element={<ApplyGuide />} />
+        </Route>
+      </Routes>
+    );
+  } else if (isMobile) {
+    return (
+      <Routes>
+        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+          <Route path="*" element={<Navigate to="/error" />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/error" element={<NotFound />} />
+          <Route path="/introduce" element={<Introduce />} />
+          <Route path="/notallow" element={<NotAllowApply />} />
+          <Route path="/apply" element={<ApplyCheck />} />
+          {/* <Route path="/login" element={<LoginCheck />} /> */}
+          <Route path="/login" element={<Login />} />
+
+          {/* <Route element={<ApplyBanner />}> */}
+          <Route path="/middle" element={<MiddleResult />} />
+          <Route path="/final" element={<FinalResult />} />
+          {/* </Route> */}
+          <Route path="/applyGuide" element={<ApplyGuide />} />
+        </Route>
+      </Routes>
+    );
+  }
 };
 
 // ApplyPage 이동 권한 확인 후 이동
