@@ -6,6 +6,7 @@ import { get_resume } from "apis/resume";
 import { get_result } from "apis/result";
 
 import { styles } from "./styles/LoginForm.css";
+import { isBrowser } from "react-device-detect";
 
 export const LoginForm = ({ state }) => {
   const id = useRef(null);
@@ -73,29 +74,66 @@ export const LoginForm = ({ state }) => {
         <Col>
           {info_text(state)}
           <Form onKeyDown={handleOnKeyPress}>
-            <Form.Control
-              ref={id}
-              type="text"
-              className="login_input_box"
-              placeholder="학번 (20231600)"
-              required
-            />
-            <Form.Control
-              ref={password}
-              type="password"
-              aria-describedby="passwordHelpBlock"
-              className="login_input_box"
-              placeholder="비밀번호"
-              required
-            />
-            <Button variant="dark" className="apply_button" onClick={Login}>
-              {" "}
-              {state === "apply"
-                ? "지원서 작성하기"
-                : state === "middle"
-                ? "서류 결과 확인하기"
-                : "최종 결과 확인하기"}
-            </Button>
+            {isBrowser ? (
+              <>
+                <Form.Control
+                  ref={id}
+                  type="text"
+                  className="login_input_box"
+                  placeholder="학번 (20241600)"
+                  required
+                />
+                <Form.Control
+                  ref={password}
+                  type="password"
+                  aria-describedby="passwordHelpBlock"
+                  className="login_input_box"
+                  placeholder="비밀번호"
+                  required
+                />
+              </>
+            ) : (
+              <>
+                <Form.Control
+                  ref={id}
+                  type="text"
+                  className="mobile_login_input_box"
+                  placeholder="학번 (20241600)"
+                  required
+                />
+                <Form.Control
+                  ref={password}
+                  type="password"
+                  aria-describedby="passwordHelpBlock"
+                  className="mobile_login_input_box"
+                  placeholder="비밀번호"
+                  required
+                />
+              </>
+            )}
+            {isBrowser ? (
+              <Button variant="dark" className="apply_button" onClick={Login}>
+                {" "}
+                {state === "apply"
+                  ? "지원서 작성하기"
+                  : state === "middle"
+                  ? "서류 결과 확인하기"
+                  : "최종 결과 확인하기"}
+              </Button>
+            ) : (
+              <Button
+                variant="dark"
+                className="mobile_apply_button"
+                onClick={Login}
+              >
+                {" "}
+                {state === "apply"
+                  ? "지원서 작성하기"
+                  : state === "middle"
+                  ? "서류 결과 확인하기"
+                  : "최종 결과 확인하기"}
+              </Button>
+            )}
           </Form>
         </Col>
       </Container>
