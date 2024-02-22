@@ -31,7 +31,6 @@ import usePageTracking from "./hooks/ga_tracking";
 import { isBrowser, isMobile } from "react-device-detect";
 
 const App = () => {
-  usePageTracking();
   return (
     <ScrollToTop>
       <RenderContent />
@@ -42,45 +41,49 @@ const App = () => {
 const RenderContent = () => {
   if (isBrowser) {
     return (
-      <Routes>
-        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
-          <Route path="*" element={<Navigate to="/error" />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/error" element={<NotFound />} />
-          <Route path="/introduce" element={<Introduce />} />
-          <Route path="/notallow" element={<NotAllowApply />} />
-          <Route path="/apply" element={<ApplyCheck />} />
-          {/* <Route path="/login" element={<LoginCheck />} /> */}
-          <Route path="/login" element={<Login />} />
+      <div className="browserApp">
+        <Routes>
+          <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+            <Route path="*" element={<Navigate to="/error" />} />
+            <Route path="/" element={<Main />} />
+            <Route path="/error" element={<NotFound />} />
+            <Route path="/introduce" element={<Introduce />} />
+            <Route path="/notallow" element={<NotAllowApply />} />
+            <Route path="/apply" element={<ApplyCheck />} />
+            {/* <Route path="/login" element={<LoginCheck />} /> */}
+            <Route path="/login" element={<Login />} />
 
-          {/* <Route element={<ApplyBanner />}> */}
-          <Route path="/middle" element={<MiddleResult />} />
-          <Route path="/final" element={<FinalResult />} />
-          {/* </Route> */}
-          <Route path="/applyGuide" element={<ApplyGuide />} />
-        </Route>
-      </Routes>
+            {/* <Route element={<ApplyBanner />}> */}
+            <Route path="/middle" element={<MiddleResult />} />
+            <Route path="/final" element={<FinalResult />} />
+            {/* </Route> */}
+            <Route path="/applyGuide" element={<ApplyGuide />} />
+          </Route>
+        </Routes>
+      </div>
     );
   } else if (isMobile) {
     return (
-      <Routes>
-        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
-          <Route path="*" element={<Navigate to="/error" />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/error" element={<NotFound />} />
-          <Route path="/introduce" element={<Introduce />} />
-          <Route path="/notallow" element={<NotAllowApply />} />
-          <Route path="/apply" element={<ApplyCheck />} />
-          {/* <Route path="/login" element={<LoginCheck />} /> */}
-          <Route path="/login" element={<Login />} />
+      <div className="mobileApp">
+        <Routes>
+          <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+            <Route path="*" element={<Navigate to="/error" />} />
+            <Route path="/" element={<Main />} />
+            <Route path="/error" element={<NotFound />} />
+            <Route path="/introduce" element={<Introduce />} />
+            <Route path="/notallow" element={<NotAllowApply />} />
+            <Route path="/apply" element={<ApplyCheck />} />
+            {/* <Route path="/login" element={<LoginCheck />} /> */}
+            <Route path="/login" element={<Login />} />
 
-          {/* <Route element={<ApplyBanner />}> */}
-          <Route path="/middle" element={<MiddleResult />} />
-          <Route path="/final" element={<FinalResult />} />
-          {/* </Route> */}
-          <Route path="/applyGuide" element={<ApplyGuide />} />
-        </Route>
-      </Routes>
+            {/* <Route element={<ApplyBanner />}> */}
+            <Route path="/middle" element={<MiddleResult />} />
+            <Route path="/final" element={<FinalResult />} />
+            {/* </Route> */}
+            <Route path="/applyGuide" element={<ApplyGuide />} />
+          </Route>
+        </Routes>
+      </div>
     );
   }
 };
