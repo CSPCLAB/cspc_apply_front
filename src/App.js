@@ -22,6 +22,10 @@ import { MiddleResult } from "pages/ResultPage/MiddleResult";
 import { FinalResult } from "pages/ResultPage/FinalResult";
 import NotFound from "pages/NotFound";
 
+//mobile pages
+import Introduce2 from "./mobile/IntroducePage/Introduce";
+
+
 // apis
 import { get_recruit_info } from "apis/get_recruit";
 
@@ -64,26 +68,24 @@ const RenderContent = () => {
     );
   } else if (isMobile) {
     return (
-      <div className="mobileApp">
-        <Routes>
-          <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
-            <Route path="*" element={<Navigate to="/error" />} />
-            <Route path="/" element={<Main />} />
-            <Route path="/error" element={<NotFound />} />
-            <Route path="/introduce" element={<Introduce />} />
-            <Route path="/notallow" element={<NotAllowApply />} />
-            <Route path="/apply" element={<ApplyCheck />} />
-            {/* <Route path="/login" element={<LoginCheck />} /> */}
-            <Route path="/login" element={<Login />} />
+      <Routes>
+        <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+          <Route path="*" element={<Navigate to="/error" />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/error" element={<NotFound />} />
+          <Route path="/introduce2" element={<Introduce2 />} />
+          <Route path="/notallow" element={<NotAllowApply />} />
+          <Route path="/apply" element={<ApplyCheck />} />
+          {/* <Route path="/login" element={<LoginCheck />} /> */}
+          <Route path="/login" element={<Login />} />
 
-            {/* <Route element={<ApplyBanner />}> */}
-            <Route path="/middle" element={<MiddleResult />} />
-            <Route path="/final" element={<FinalResult />} />
-            {/* </Route> */}
-            <Route path="/applyGuide" element={<ApplyGuide />} />
-          </Route>
-        </Routes>
-      </div>
+          {/* <Route element={<ApplyBanner />}> */}
+          <Route path="/middle" element={<MiddleResult />} />
+          <Route path="/final" element={<FinalResult />} />
+          {/* </Route> */}
+          <Route path="/applyGuide" element={<ApplyGuide />} />
+        </Route>
+      </Routes>
     );
   }
 };
