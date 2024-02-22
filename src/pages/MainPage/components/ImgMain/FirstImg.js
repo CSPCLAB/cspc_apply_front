@@ -40,7 +40,7 @@ const FirstImg = () => {
                 className="GoToApplyStyle"
                 style={{ justifyContent: 'center', bottom: '50px' }}
             >
-                <Link to="/login">
+                <Link to="/applyGuide">
                     <button className="GoToButtonStyle">지원하기</button>
                 </Link>
             </div>
