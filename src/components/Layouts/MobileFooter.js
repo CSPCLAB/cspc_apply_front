@@ -32,43 +32,39 @@ const MobileFooter = () => {
 
   return (
     <>
-      <div className="footerPadding" />
-      <div className="footerLine" />
-      <Navbar className="mt-5 mobileFooter">
-        <Container className="mobileFooterWord">
-          <Row>
-            <Col className="mobileCspc">
+      <div className="mobileFooterPadding" />
+      <div className="mobileFooterLine" />
+      <Container className="mobileFooterBoxPadding">
+        <Container>
+          <Row className="mobileFooterBox">
+            <Col className="mobileCspc" xs={3}>
               <Link to="/" className="mobileLink">
                 CSPC
               </Link>
             </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Link to="/introduce" className="mobileLink">
-                소개
-              </Link>
+            <Col xs={9}>
+              <Row>
+                <Col className="mobileFooterWord">
+                  <Link to="/introduce" className="mobileLink">
+                    소개
+                  </Link>
+                </Col>
+                <Col>
+                  <Link to="/applyGuide" className="mobileLink">
+                    지원안내
+                  </Link>
+                </Col>
+                <Col>
+                  <Link to="/login" className="mobileLink">
+                    지원하기
+                  </Link>
+                </Col>
+              </Row>
             </Col>
           </Row>
-          <Row>
-            <Col>
-              <Link to="/applyGuide" className="mobileLink">
-                지원안내
-              </Link>
-            </Col>
+          <Row className="mt-3">
+            <Col>서강대학교 리치과학관 914호 </Col>
           </Row>
-          <Row>
-            <Col>
-              <Link to="/login" className="mobileLink">
-                지원하기
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-        <Container>
-          <Col>서강대학교 리치과학관 914호 문의 </Col>
-        </Container>
-        <Container>
           <Col>
             문의{" "}
             {master === null
@@ -76,7 +72,7 @@ const MobileFooter = () => {
               : "학회장 " + master.name + " " + master.email}
           </Col>
         </Container>
-      </Navbar>
+      </Container>
     </>
   );
 };

@@ -6,6 +6,7 @@ import dateFormat, { masks } from "dateformat";
 import styles from "./styles/RecruitProcess.module.css";
 
 import right_vector from "./../../../assets/images/right_vector.png";
+
 const RecruitProcess = ({ recruit_data }) => {
   const format = "m/d";
   return (
@@ -26,7 +27,7 @@ const RecruitProcess = ({ recruit_data }) => {
                 <Row className={styles.process_text}>서류</Row>
                 <Row className={styles.date_text}>
                   {dateFormat(recruit_data.start_time, format)} ~{" "}
-                  {dateFormat(recruit_data.document_deadline, format)} 24시
+                  {dateFormat(recruit_data.document_deadline, format)}
                 </Row>
               </Col>
             </div>

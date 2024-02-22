@@ -16,7 +16,7 @@ import Main from "./pages/MainPage/Main";
 import Apply from "./pages/ApplyPage/Apply";
 import Introduce from "./pages/IntroducePage/Introduce";
 import { Login } from "./pages/LoginPage/Login";
-import ApplyGuide from "./pages/ApplyPage/components/Guide/ApplyGuide";
+import {ApplyGuide,Mobile_ApplyGuide} from "./pages/ApplyPage/components/Guide/ApplyGuide";
 import NotAllowApply from "pages/NotAllowPage/NotAllowApply";
 import { MiddleResult } from "pages/ResultPage/MiddleResult";
 import { FinalResult } from "pages/ResultPage/FinalResult";
@@ -82,7 +82,7 @@ const RenderContent = () => {
           <Route path="/middle" element={<MiddleResult />} />
           <Route path="/final" element={<FinalResult />} />
           {/* </Route> */}
-          <Route path="/applyGuide" element={<ApplyGuide />} />
+          <Route path="/applyGuide" element={<Mobile_ApplyGuide />} />
         </Route>
       </Routes>
     );
