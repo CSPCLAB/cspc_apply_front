@@ -25,6 +25,7 @@ import NotFound from "pages/NotFound";
 //mobile pages
 import Introduce2 from "./mobile/IntroducePage/Introduce";
 import MiddleResult2 from "./mobile/ResultPage/ResultPage/MiddleResult";
+import FinalResult2 from "./mobile/ResultPage/ResultPage/FinalResult";
 
 // apis
 import { get_recruit_info } from "apis/get_recruit";
@@ -81,7 +82,7 @@ const RenderContent = () => {
 
           {/* <Route element={<ApplyBanner />}> */}
           <Route path="/middle" element={<MiddleResult2 />} />
-          <Route path="/final" element={<FinalResult />} />
+          <Route path="/final" element={<FinalResult2 />} />
           {/* </Route> */}
           <Route path="/applyGuide" element={<Mobile_ApplyGuide />} />
         </Route>

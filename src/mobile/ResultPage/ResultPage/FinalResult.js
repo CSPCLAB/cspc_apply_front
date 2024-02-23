@@ -13,3 +13,5 @@ export const FinalResult = () => {
     } else return <In_result_fail resume={resume} />;
   }
 };
+
+export default FinalResult;

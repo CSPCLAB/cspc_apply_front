@@ -3,16 +3,16 @@ import "./styles/InterviewFail.css";
 
 const In_result_fail = ({ resume }) => {
   return (
-    <div className="black">
-      <div className="fail_resultbox">
-        <div className="fail_resultlen">면접결과</div>
+    <div className="black_">
+      <div className="fail_resultbox_">
+        <div className="fail_resultlen_">면접결과</div>
       </div>
-      <div className="fail_line"></div>
-      <div className="fail_resultbox2">
-        <div className="fail_resultlen2">
+      <div className="fail_line_"></div>
+      <div className="fail_resultbox2_">
+        <div className="fail_resultlen2_">
           {resume.name} 님 아쉽지만, 모시지 못하게 되었습니다
         </div>
-        <div className="fail_resultlen3">
+        <div className="fail_resultlen3_">
           CSPC 신입 부원 모집에
           <br />
           최선을 다해 임해주셔서 정말 감사합니다.

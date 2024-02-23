@@ -1,30 +1,34 @@
-.black {
+.black_ {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 75px;
+    top: 60%;
+    width: 100vw;
     flex-direction: column;
     position: relative;
     font-family: 'IBMPlexSans-Regular';
     font-style: normal;
 }
 
+.confetti_style_ {
+    position: relative;
+}
+
 @font-face {
     font-family: 'IBMPlexSans-Regular';
-    /* src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf'); */
     src: url('../../../../../assets/fonts/IBMPlexSans-Regular.ttf')
 }
 
-.pass_resultbox {
+.pass_resultbox_ {
     position: relative;
-    width: 1300px;
-    height: 207px;
-
+    width: 100%;
+    height: 180px;
 }
 
-.pass_resultlen {
-    position: absolute;
-    top: 88px;
+.pass_resultlen_ {
+    position: relative;
+    top: 70%;
+    padding-left: 5%;
 
     font-weight: 700;
     font-size: 24px;
@@ -33,24 +37,24 @@
     color: #000000;
 }
 
-.pass_line {
+.pass_line_ {
     position: relative;
-    width: 1300px;
+    width: 100%;
     height: 0px;
     border: 1px solid #000000;
 }
 
-.pass_resultbox2 {
+.pass_resultbox2_ {
     position: relative;
-    width: 1300px;
+    width: 100%;
     height: 414px;
 
 }
 
-.pass_resultlen2 {
+.pass_resultlen2_ {
     position: relative;
     top: 88px;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
 
     font-weight: 700;
@@ -64,10 +68,10 @@
 
 }
 
-.pass_resultlen3 {
+.pass_resultlen3_ {
     position: relative;
-    top: 174px;
-    font-size: 20px;
+    top: 30%;
+    font-size: 15px;
     text-align: center;
 
     font-weight: 400;
