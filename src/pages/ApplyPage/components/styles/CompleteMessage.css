@@ -9,6 +9,17 @@
     height: 588px;
 }
 
+.MobileCompleteMessage {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    margin-top: 5vh;
+
+    flex-direction: column;
+
+}
+
 .CompleteTitle {
     margin-bottom: 50px;
 
@@ -19,9 +30,27 @@
     color: #000000;
 }
 
+.MobileCompleteTitle {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
 .CompleteContent {
     font-weight: 400;
     font-size: 20px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+.MobileCompleteContent {
+    font-weight: 400;
+    font-size: 16px;
     line-height: 150%;
 
     color: #000000;
