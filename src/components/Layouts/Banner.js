@@ -27,14 +27,13 @@ const Banner = () => {
     ) {
       setCurPage("지원하기");
     } else if (path.startsWith("/login")) {
-      setCurPage("login");
+      setCurPage("지원안내");
     } else {
       setCurPage("other");
     }
   }, [location]);
 
-  if (curPage == "main" || curPage == "other" || curPage == "login")
-    return null;
+  if (curPage == "main" || curPage == "other") return null;
   else {
     return (
       <>
