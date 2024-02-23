@@ -1,0 +1,145 @@
+.mfrom{
+    position: relative;
+    width: 1300px;
+    height: 561px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.process{
+    position: absolute;  
+    margin-top: 142px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+.guideLine{
+    position: absolute;
+    width: 1300px;
+    height: 0px;  
+    margin-top: 223px;
+    border: 0.3px solid #000000;
+}
+.circleFrame{
+    position: relative;
+    width: 1300px;
+    height: 254px; 
+    font-style: normal;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.firstCircle {
+    position: absolute;
+    left: 108px;
+    top: 287px;
+    
+    background-color: rgba(85, 169, 190, 0.7);
+    width: 235px;
+    height: 235px;
+    border: 5px solid white;
+    outline: 5px solid rgba(85, 169, 190, 0.7);
+    border-radius: 50%;
+}
+.secondCircle{
+    position: absolute;
+    left: 532px;
+    top: 287px;
+    background-color: rgba(85, 169, 190, 0.85);
+    width: 235px;
+    height: 235px;    
+    border-radius: 50%;
+}
+.thirdCircle{
+    position: absolute;
+    left: 956px;
+    top: 287px;
+    background-color: rgba(85, 169, 190, 1);
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+}
+.circleTitle1{
+    position: absolute;
+    left: 90px;
+    top: 83px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: white;
+    text-align: center;
+}
+.circleContent1{
+    position: absolute;
+    text-align: center;
+    left: 45px;
+    top: 130px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.circleTitle2{
+    position: absolute;
+    left: 95px;
+    top: 83px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: white;
+    text-align: center;
+}
+.circleContent2{
+    position: absolute;
+    text-align: center;
+    left: 69px;
+    top: 130px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.circleContent3{
+    position: absolute;
+    text-align: center;
+    left: 75px;
+    top: 130px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+.right1{
+    position: absolute;
+    left: 431px;
+    top: 387px;
+    height: 26px;
+}
+
+.right2{
+    position: absolute;
+    left: 855px;
+    top: 387px;
+    height: 26px;
+}
+
+.ApplyButton{ 
+    width: 429px;
+    height: 52px;
+    left: 747px;
+    margin-top: 462.5px;
+    background: #000000;
+    border-radius: 10px;
+}
+
+.applyLetter{
+    left: 185px;
+    top: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}

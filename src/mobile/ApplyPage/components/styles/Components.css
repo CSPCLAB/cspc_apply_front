@@ -1,0 +1,103 @@
+.WriteApplicationStyle {
+    position: relative;
+
+    width: 1300px;
+    height: 207px;
+
+    align-items: center;
+}
+
+.MobileWriteApplicationStyle {
+    position: relative;
+    width: 100vw;
+
+    height: 48px;
+
+
+    align-items: center;
+}
+
+.WriteApplicationWordStyle {
+    position: absolute;
+
+    top: 88px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #000000;
+}
+
+.MobileWriteApplicationWordStyle {
+    position: relative;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+
+    color: #000000;
+}
+
+
+.StepStyle {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.StepButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 433.33px;
+    height: 48px;
+
+    border-bottom: solid 1px #000000;
+}
+
+.MobileStepButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 433.33px; */
+    /* height: 48px; */
+    width: 30vw;
+    height: 5vh;
+
+    border-bottom: solid 1px #000000;
+}
+
+.Selected {
+    background: #000000;
+    color: #ffffff;
+}
+
+.UnSelected {
+    background: #ffffff;
+    color: #000000;
+}
+
+.passed {
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.GoWriteApply {
+    position: absolute;
+
+    width: 429px;
+    height: 52px;
+
+    background: #000000;
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 18px;
+
+    color: #ffffff;
+}

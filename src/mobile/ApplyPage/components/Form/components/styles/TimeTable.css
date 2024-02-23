@@ -1,0 +1,103 @@
+.TimeTable {
+    position: relative;
+
+    align-content: center;
+
+    width: 1300px;
+    height: 507px;
+}
+
+.MobileTimeTable {
+    position: relative;
+
+    align-content: center;
+
+    /* width: 1300px; */
+    width: 90vw;
+    /* height: 507px; */
+
+    margin-bottom: 30vh;
+}
+
+.TimeTableBox {
+    position: relative;
+
+    align-content: center;
+
+    height: 23px;
+
+    margin-bottom: 30px;
+}
+
+.MobileTimeTableBox {
+    position: relative;
+
+    display: flex;
+
+    margin-bottom: 30px;
+}
+
+.TimeTableButton {
+    width: 23px;
+    height: 23px;
+
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.CheckButton {
+    background: gray;
+}
+
+.unCheckedButton {
+    background: #ffffff;
+}
+
+.checkedButton {
+    content:'✔';
+    color: #ffffff;
+
+    background: #000000;
+}
+
+.TimeTableWord {
+    position: absolute;
+
+    top: 0px;
+    left: 38px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.MobileTimeTableWord {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.smallLine {
+    position: absolute;
+
+    width: 315px;
+    height: 0px;
+
+    border: 0.3px solid #d9d9d9;
+}
+
+.Line {
+    top: 35px;
+}
+
+.topLine {
+    top: 200px;
+}
+
+.bottomLine {
+    top: 410px;
+}

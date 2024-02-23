@@ -1,0 +1,80 @@
+.AgreePrivacy {
+    position: relative;
+
+    width: 1300px;
+    height: 650px;
+}
+
+.IntroducePrivacy_1 {
+    position: absolute;
+
+    top: 50px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+}
+
+.IntroducePrivacy_2 {
+    position: absolute;
+
+    top: 176px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #000000;
+}
+
+.IntroducePrivacy_3 {
+    position: absolute;
+
+    top: 222px;
+
+    width: 1300px;
+    height: 200px;
+
+    border: 1px solid #000000;
+}
+
+.PrivacyBox {
+    position: relative;
+}
+
+.InPrivacyBox {
+    position: absolute;
+    padding-left: 30px;
+}
+
+.InBox_1 {
+    top: 35px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    
+    color:#000000;
+}
+
+.InBox_2 {
+    top: 78px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.InBox_3 {
+    top: 111px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #000000;
+}

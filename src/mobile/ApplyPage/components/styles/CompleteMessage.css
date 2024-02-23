@@ -1,0 +1,36 @@
+.CompleteMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100vw;
+    height: 588px;
+}
+
+.CompleteTitle {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+.CompleteContent {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+.CanCorrection {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 150%;
+
+    color: #595959;
+}
