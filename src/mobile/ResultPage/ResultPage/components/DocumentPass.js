@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles/DocumentPass.css";
 
 import imgMap from "../../../../assets/images/result/map.png";
 import imgSpot from "../../../../assets/images/result/map-marker-Filled.png";
 
-import dateFormat, { masks } from "dateformat";
+import dateFormat from "dateformat";
 
 const Doc_result_pass = ({ resume }) => {
+  const [showMap, setShowMap] = useState(false);
+
   const format = "m월 dd일 오후 h시 MM분";
+
+  const toggleMap = () => {
+    setShowMap(!showMap);
+  }
+
+  const mapContainerStyle = {
+    display: showMap ? "block" : "none", // 지도를 표시할지 결정하는 스타일
+  };
+
   return (
     <div className="black_">
       <div className="pass__resultbox_">
@@ -34,10 +45,18 @@ const Doc_result_pass = ({ resume }) => {
           문의사항이 있으시다면 아래 이메일로 문의해주세요.
           <br />
         </div>
-        <div className="pass__picline_">
-          <img style={{ transform: 'scale(0.5)' }} src={imgMap} />
-          <div className="pass__picline_spot">
-            <img src={imgSpot} />
+        <div className="pass__picline_" >
+          {showMap && (
+            <>
+              <img src={imgMap} alt="Map" style={{ maxWidth: '100%', height: 'auto' }} />
+              {/* <div className="marker_" /> */}
+            </>
+          )}
+          {/* <img style={{ transform: 'scale(0.5)' }} src={imgMap} /> */}
+          <div className="pass__picline_spot_">
+            <button onClick={toggleMap} style={{ background: 'none', border: 'none' }}>
+              <img src={imgSpot} alt="Spot" />
+            </button>
           </div>
         </div>
       </div>

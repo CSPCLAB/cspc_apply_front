@@ -44,12 +44,12 @@
 .pass__resultbox2_ {
     position: relative;
     width: 100%;
-    height: 550px;
+    height: 1000px;
 }
 
 .pass__resultlen1_ {
     position: relative;
-    top: 18%;
+    top: 10%;
     font-size: 21px;
     line-height: 150%;
     font-weight: 700;
@@ -64,7 +64,7 @@
 
 .pass__resultlen2_ {
     position: relative;
-    top: 25%;
+    top: 13%;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
@@ -79,7 +79,7 @@
 
 .pass__resultlen3_ {
     position: relative;
-    top: 40%;
+    top: 22%;
     font-weight: 700;
     font-size: 21px;
     line-height: 150%;
@@ -94,7 +94,7 @@
 
 .pass__resultlen4_ {
     position: relative;
-    top: 45%;
+    top: 25%;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -110,29 +110,28 @@
 
 .pass__picline_ {
     position: relative;
-    top: 50%;
+    top: 30%;
     width: 100%;
-    height: 70%;
-    /* right: 25%; */
-    /* max-width: 60%; */
+    height: 100px;
     border-radius: 10px;
     margin: 0px auto;
     object-fit: contain;
-    /* object-position: center; */
-    /* position: center; */
-    align-items: center;
-    /*ㅜㅜㅜㅜ*/
-    justify-content: center;
-
+    text-align: center;
     flex: none;
     order: 4;
     flex-grow: 0;
 }
 
+.pass_picline_ img {
+    max-width: 100%;
+    height: auto;
+}
+
 .pass__picline_spot_ {
     position: relative;
-    top: 10%;
+    top: 30%;
     left: 50%;
-    width: 54px;
-    height: 54px;
+    transform: translate(-50%, -50%);
+    width: 46px;
+    height: 46px;
 }
