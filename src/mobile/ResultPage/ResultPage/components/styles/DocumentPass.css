@@ -128,10 +128,13 @@
 }
 
 .pass__picline_spot_ {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+/* 
     top: 30%;
-    left: 50%;
+    left: 50%; */
     transform: translate(-50%, -50%);
-    width: 46px;
-    height: 46px;
+    width: 60px;
+    height: 60px;
 }

@@ -4,14 +4,13 @@ import { useState, useEffect } from "react";
 import "../styles/Culture.css";
 import "../styles/ApplyGuide.css";
 
-
 import guide1 from "../../../../assets/images/applyGuide/guide1.png";
 import guide2 from "../../../../assets/images/applyGuide/guide2.png";
 import guide3 from "../../../../assets/images/applyGuide/guide3.png";
 import guide4 from "../../../../assets/images/applyGuide/guide4.png";
 import guide5 from "../../../../assets/images/applyGuide/guide5.png";
 import guide6 from "../../../../assets/images/applyGuide/guide6.png";
-import { Container, Row , Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Culture = () => {
   return (
@@ -20,33 +19,51 @@ const Culture = () => {
         <div className="cspcCul">CSPC 문화</div>
         <div className="cspcIntro">CSPC는 이런 분들과 잘 어울립니다.</div>
         <div className="SepLine"></div>
-        
+
         <div className="Line1">
           <div className="Line1_1">
-            <img className="img1" src={guide1} />
+            <img
+              className="img1"
+              src={"https://dev.cspc.me/media/applyguide_1.png"}
+            />
             <div className="sen1">좁고 깊은 관계를 추구하는 사람</div>
           </div>
           <div className="Line1_2">
-            <img className="img1" src={guide2} />
+            <img
+              className="img1"
+              src={"https://dev.cspc.me/media/applyguide_2.png"}
+            />
             <div className="sen1 white">할 땐 하고 놀 땐 노는 사람</div>
           </div>
           <div className="Line1_3">
-            <img className="img1" src={guide3} />
+            <img
+              className="img1"
+              src={"https://dev.cspc.me/media/applyguide_3.png"}
+            />
             <div className="sen1">랩실에 자주 나올 수 있는 사람</div>
           </div>
         </div>
 
         <div className="Line2">
           <div className="Line2_1">
-            <img className="img2" src={guide4} />
+            <img
+              className="img2"
+              src={"https://dev.cspc.me/media/applyguide_4.png"}
+            />
             <div className="sen1 white">같이 눈사람 만들어 줄 사람</div>
           </div>
           <div className="Line2_2">
-            <img className="img2" src={guide5} />
+            <img
+              className="img2"
+              src={"https://dev.cspc.me/media/applyguide_5.png"}
+            />
             <div className="sen1">배우고자 하는 의지가 있는 사람</div>
           </div>
           <div className="Line2_3">
-            <img className="img2" src={guide6} />
+            <img
+              className="img2"
+              src={"https://dev.cspc.me/media/applyguide_6.png"}
+            />
             <div className="sen1 white">이걸 모두 읽고 있는 당신</div>
           </div>
         </div>
@@ -67,7 +84,7 @@ const Mobile_Culture = () => {
     "랩실에 자주 나올 수 있는 사람",
     "같이 눈사람 만들어 줄 사람",
     "배우고자 하는 의지가 있는 사람",
-    "이걸 모두 읽고 있는 당신"
+    "이걸 모두 읽고 있는 당신",
   ];
 
   // 현재 인덱스
@@ -103,8 +120,14 @@ const Mobile_Culture = () => {
       <Row className="mt-5">
         <Col className="d-flex justify-content-center align-items-center">
           <div className="M_Line1_1 d-flex flex-column justify-content-center align-items-center">
-            <img className="M_img1" src={images[currentIndex]} style={{ marginBottom: "15vw" }} />
-            <div className="M_sen1" style={{ marginTop: "-8vw" }}>{sentences[currentIndex]}</div>
+            <img
+              className="M_img1"
+              src={images[currentIndex]}
+              style={{ marginBottom: "15vw" }}
+            />
+            <div className="M_sen1" style={{ marginTop: "-8vw" }}>
+              {sentences[currentIndex]}
+            </div>
           </div>
         </Col>
       </Row>
@@ -112,4 +135,4 @@ const Mobile_Culture = () => {
   );
 };
 
-export {Culture,Mobile_Culture};
+export { Culture, Mobile_Culture };

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./styles/DocumentPass.css";
 
+import { Row, Col } from "react-bootstrap";
+
 import imgMap from "../../../../assets/images/result/map.png";
 import imgSpot from "../../../../assets/images/result/map-marker-Filled.png";
 
@@ -13,7 +15,7 @@ const Doc_result_pass = ({ resume }) => {
 
   const toggleMap = () => {
     setShowMap(!showMap);
-  }
+  };
 
   const mapContainerStyle = {
     display: showMap ? "block" : "none", // 지도를 표시할지 결정하는 스타일
@@ -45,19 +47,16 @@ const Doc_result_pass = ({ resume }) => {
           문의사항이 있으시다면 아래 이메일로 문의해주세요.
           <br />
         </div>
-        <div className="pass__picline_" >
-          {showMap && (
-            <>
-              <img src={imgMap} alt="Map" style={{ maxWidth: '100%', height: 'auto' }} />
-              {/* <div className="marker_" /> */}
-            </>
-          )}
-          {/* <img style={{ transform: 'scale(0.5)' }} src={imgMap} /> */}
-          <div className="pass__picline_spot_">
-            <button onClick={toggleMap} style={{ background: 'none', border: 'none' }}>
-              <img src={imgSpot} alt="Spot" />
-            </button>
-          </div>
+        <div className="pass__picline_">
+          <Col>
+            <Row>
+              <img
+                src={"https://dev.cspc.me/media/result_map_M8FldVt.png"}
+                alt="Map"
+                // style={{ maxWidth: "100%", height: "auto" }}
+              />
+            </Row>
+          </Col>
         </div>
       </div>
     </div>
