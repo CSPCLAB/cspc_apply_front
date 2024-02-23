@@ -5,6 +5,17 @@
     height: 228px;
 }
 
+.MobileAgreeAboveCheck {
+    position: relative;
+
+    width: 80vw;
+    height: 30vh;
+
+    margin-top: 5vh;
+
+    /* background: red; */
+}
+
 .AgreeAboveWord {
     position: absolute;
 
@@ -18,10 +29,27 @@
     color: #000000;
 }
 
+.MobileAgreeAboveWord {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    margin-left: 2vw;
+
+    /* background: blue; */
+
+    color: #000000;
+}
+
 .GoWriteApplyButton {
     position: absolute;
 
     top: 362px;
+}
+
+.MobileGoWriteApplyButton {
+
 }
 
 .Button{
@@ -32,6 +60,13 @@
 
     top: 473px;
     left: 543px;
+
+    border: none;
+}
+
+.MobileButton{
+    width: 20px;
+    height: 20px;
 
     border: none;
 }

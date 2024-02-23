@@ -5,6 +5,17 @@
     height: 650px;
 }
 
+.MobileAgreePrivacy {
+    position: relative;
+
+    /* width: 1300px; */
+    /* height: 650px; */
+
+    margin-top: 5vh;
+
+    width: 90vw;
+}
+
 .IntroducePrivacy_1 {
     position: absolute;
 
@@ -13,6 +24,16 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
+
+    color: #000000;
+}
+
+.MobileIntroducePrivacy_1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    margin-bottom: 3vh;
 
     color: #000000;
 }
@@ -44,6 +65,14 @@
     position: relative;
 }
 
+.MobilePrivacyBox {
+    /* position: relative; */
+
+    border: 1px solid #000000;
+
+}
+
+
 .InPrivacyBox {
     position: absolute;
     padding-left: 30px;
@@ -74,6 +103,33 @@
 
     font-weight: 400;
     font-size: 18px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.MobileInBox_1 {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    
+    color:#000000;
+}
+
+.MobileInBox_2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+
+    color: #000000;
+}
+
+.MobileInBox_3 {
+    top: 111px;
+
+    font-weight: 400;
+    font-size: 14px;
     line-height: 23px;
 
     color: #000000;
