@@ -1,0 +1,77 @@
+.picFrame_ {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 153px 0px; */
+    gap: 50px;
+    /*50*/
+    /* width: 1900%; */
+    width: 100%;
+    height: 324px;
+    left: 0px;
+    /* top: 9%; */
+}
+
+.picIntro_ {
+    top: 10vh;
+    width: 100%;
+    height: 71px;
+    width: 90%;
+}
+
+.picIntro1_ {
+    margin-top: 19vh;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 230%;
+}
+
+.picIntro2_ {
+    position: relative;
+    left: 0px;
+    /* width: 100%; */
+    top: 40%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+.sepLine_ {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    top: -370%;
+    border: 0.3px solid #000000;
+}
+
+
+
+
+
+/*
+.picturesForm{  
+    position: relative;
+    width: 1299px;
+    height: 1603px;
+    top: 1422px;
+}
+
+.pictureMain{
+    position: absolute;
+    text-align: center;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pic{
+    position: absolute;
+width: 367px;
+height: 367px;
+left: 0px;
+top: 0px;
+
+border-radius: 10px;
+}*/

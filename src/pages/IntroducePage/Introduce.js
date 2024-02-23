@@ -7,22 +7,23 @@ import Info from "./components/Info";
 import Benefit from "./components/Benefit";
 import Elite from "./components/Elite";
 import ImgIntroduce from "./components/ImgIntroduce";
-
 import ApplyCard from "../../components/ApplyCard";
 
-import Banner from "../../components/Layouts/Banner";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Introduce = () => {
   return (
-    <>
-      <Banner title="소개" />
-
-      <Info />
-      <Benefit />
-      <Elite />
-      <ImgIntroduce />
-      <ApplyCard />
-    </>
+    <Container>
+      <Row>
+        <Col xs={12}>
+          <Info />
+          <Benefit />
+          <Elite />
+          <ImgIntroduce />
+          <ApplyCard />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

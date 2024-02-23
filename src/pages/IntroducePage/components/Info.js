@@ -5,7 +5,7 @@ import "./styles/Info.css";
 
 const Info = () => {
   return (
-    <div className="main">
+    <div>
       <div className="mainForm1">
         <div className="mainForm2">
           <div className="form">

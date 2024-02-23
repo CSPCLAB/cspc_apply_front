@@ -5,9 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: auto;
-
-  min-width: 1920px;
+  /* overflow-x: auto; */
+  /* overflow-y: hidden; */
 }
 
 code {

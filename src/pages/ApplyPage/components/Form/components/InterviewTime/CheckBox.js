@@ -43,11 +43,13 @@ const CheckBox = ({
 
   if (isChecked)
     return (
-      <button
-        id={id}
-        className="TimeTableButton checkedButton"
-        onClick={() => changeChecked({ id })}
-      />
+      <>
+        <button
+          id={id}
+          className="TimeTableButton checkedButton"
+          onClick={() => changeChecked({ id })}
+        />
+      </>
     );
   else
     return (

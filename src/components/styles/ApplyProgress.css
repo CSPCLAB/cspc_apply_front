@@ -157,3 +157,72 @@
     text-align: center;
     color: #FFFFFF;
 }
+
+/* Mobile */
+
+@font-face {
+    font-family: 'IBMPlexSans-Regular';
+    src: url('../../assets/fonts/IBMPlexSans-Regular.ttf');
+}
+
+.M_process{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-left: 5%;
+}
+
+.M_guideLine{
+    height: 0px;  
+    margin-left: 5%;
+    border: 0.3px solid #000000;
+}
+
+.M_FirstCircle {
+    background-color: rgba(85, 169, 190, 0.7);
+    width: 25vw;
+    height: 25vw;
+    border: 2px solid white;
+    outline: 5px solid rgba(85, 169, 190, 0.7);
+    border-radius: 50%;
+}
+.M_SecondCircle{
+    background-color: rgba(85, 169, 190, 0.85);
+    width: 25vw;
+    height: 25vw; 
+    border-radius: 50%;
+}
+
+.M_CircleTitle1{
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 4vw;
+}
+
+.M_CircleContent1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.M_ApplyButton{ 
+    background-color: #000000; /* 배경색을 변경 */
+    border: none; /* 테두리 제거 */
+    border-radius: 20px; /* 더 둥근 모양으로 변경 */
+    padding: 2vw 11vw; /* 내부 여백 설정 */
+    font-size: 20px; /* 글꼴 크기 설정 */
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    text-decoration: none; /* 텍스트에 밑줄 제거 */
+}
+
+.M_ApplyLetter{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}

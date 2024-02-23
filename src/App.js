@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useAsync } from "react-async";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import { Container, Row, Col } from "react-bootstrap";
 
 // layouts
 import MainLayout from "./components/Layouts/MainLayout";
@@ -14,11 +16,16 @@ import Main from "./pages/MainPage/Main";
 import Apply from "./pages/ApplyPage/Apply";
 import Introduce from "./pages/IntroducePage/Introduce";
 import { Login } from "./pages/LoginPage/Login";
-import ApplyGuide from "./pages/ApplyPage/components/Guide/ApplyGuide";
+import { ApplyGuide, Mobile_ApplyGuide } from "./pages/ApplyPage/components/Guide/ApplyGuide";
 import NotAllowApply from "pages/NotAllowPage/NotAllowApply";
 import { MiddleResult } from "pages/ResultPage/MiddleResult";
 import { FinalResult } from "pages/ResultPage/FinalResult";
 import NotFound from "pages/NotFound";
+
+//mobile pages
+import Introduce2 from "./mobile/IntroducePage/Introduce";
+import MiddleResult2 from "./mobile/ResultPage/ResultPage/MiddleResult";
+import FinalResult2 from "./mobile/ResultPage/ResultPage/FinalResult";
 
 // apis
 import { get_recruit_info } from "apis/get_recruit";
@@ -26,35 +33,62 @@ import { get_recruit_info } from "apis/get_recruit";
 // hooks
 import usePageTracking from "./hooks/ga_tracking";
 
-import ReactGA from "react-ga";
-
-const gaTrackingId = process.env.REACT_APP_GA_TRACKING_ID;
-ReactGA.initialize(gaTrackingId);
+import { isBrowser, isMobile } from "react-device-detect";
 
 const App = () => {
-  usePageTracking();
   return (
     <ScrollToTop>
+      <RenderContent />
+    </ScrollToTop>
+  );
+};
+
+const RenderContent = () => {
+  if (isBrowser) {
+    return (
+      <div className="browserApp">
+        <Routes>
+          <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
+            <Route path="*" element={<Navigate to="/error" />} />
+            <Route path="/" element={<Main />} />
+            <Route path="/error" element={<NotFound />} />
+            <Route path="/introduce" element={<Introduce />} />
+            <Route path="/notallow" element={<NotAllowApply />} />
+            <Route path="/apply" element={<ApplyCheck />} />
+            {/* <Route path="/login" element={<LoginCheck />} /> */}
+            <Route path="/login" element={<Login />} />
+
+            {/* <Route element={<ApplyBanner />}> */}
+            <Route path="/middle" element={<MiddleResult />} />
+            <Route path="/final" element={<FinalResult />} />
+            {/* </Route> */}
+            <Route path="/applyGuide" element={<ApplyGuide />} />
+          </Route>
+        </Routes>
+      </div>
+    );
+  } else if (isMobile) {
+    return (
       <Routes>
         <Route element={<MainLayout />} errorElement={<NotFound></NotFound>}>
           <Route path="*" element={<Navigate to="/error" />} />
           <Route path="/" element={<Main />} />
           <Route path="/error" element={<NotFound />} />
-          <Route path="/introduce" element={<Introduce />} />
+          <Route path="/introduce" element={<Introduce2 />} />
           <Route path="/notallow" element={<NotAllowApply />} />
           <Route path="/apply" element={<ApplyCheck />} />
           {/* <Route path="/login" element={<LoginCheck />} /> */}
           <Route path="/login" element={<Login />} />
 
-          <Route element={<ApplyBanner />}>
-            <Route path="/middle" element={<MiddleResult />} />
-            <Route path="/final" element={<FinalResult />} />
-          </Route>
-          <Route path="/applyGuide" element={<ApplyGuide />} />
+          {/* <Route element={<ApplyBanner />}> */}
+          <Route path="/middle" element={<MiddleResult2 />} />
+          <Route path="/final" element={<FinalResult2 />} />
+          {/* </Route> */}
+          <Route path="/applyGuide" element={<Mobile_ApplyGuide />} />
         </Route>
       </Routes>
-    </ScrollToTop>
-  );
+    );
+  }
 };
 
 // ApplyPage 이동 권한 확인 후 이동

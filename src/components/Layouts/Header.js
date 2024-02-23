@@ -1,35 +1,32 @@
 import React from "react";
+
+import { Container, Nav, Navbar } from "react-bootstrap";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import "../styles/Header.css";
 
 const Header = () => {
   return (
     <>
-      <Navbar sticky="top" varient="light" bg="white" expand="md">
-        <Container>
-          <Nav className="banner">
-            <Navbar.Brand href="/" id="bannerbrand">
-              CSPC
-            </Navbar.Brand>
-            <Nav.Item>
-              <Nav.Link href="/introduce" id="bannerletter">
+      <Navbar sticky="top" bg="white" expand="lg" id="hedaer">
+        <Container id="headerBox">
+          <Navbar.Brand href="/" id="headerBrand">
+            CSPC
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/introduce" id="headerletter" className="mx-4">
                 소개
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/applyGuide" id="bannerletter">
+              <Nav.Link href="/applyGuide" id="headerletter" className="mx-4">
                 지원안내
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/login" id="bannerletter">
+              <Nav.Link href="/login" id="headerletter" className="mx-4">
                 지원하기
               </Nav.Link>
-            </Nav.Item>
-          </Nav>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </>

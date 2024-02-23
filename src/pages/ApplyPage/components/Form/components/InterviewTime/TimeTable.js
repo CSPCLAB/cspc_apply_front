@@ -8,6 +8,7 @@ import { interview } from "../../../../../../apis/interview";
 import "../styles/TimeTable.css";
 
 import CheckBox from "./CheckBox";
+import { isBrowser, isMobile } from "react-device-detect";
 
 const TimeTable = ({ contents, setContent }) => {
   const { data, error, isLoading } = useAsync({ promiseFn: interview }, []);
@@ -25,43 +26,51 @@ const TimeTable = ({ contents, setContent }) => {
 
   if (isLoading) return "Loading...";
   if (error) return `Something went wrong: ${error.message}`;
-  if (data)
-    return (
-      <div className="TimeTable">
-        {data.map((time, index) => (
-          <div key={time.id} className="TimeTableBox">
-            {index % 3 == 2 && index != data.length - 1 ? (
-              <div className="smallLine Line" />
-            ) : null}
-            <CheckBox
-              contents={contents}
-              setContent={setContent}
-              id={time.id}
-              isChecked={String(timeIndex).includes(time.id)}
-              timeIndex={timeIndex}
-              setTimeIndex={setTimeIndex}
-            />
-            <div className="TimeTableWord">{printTime(time.time)}</div>
-          </div>
-        ))}
-        {/*}
-                <div
-                    className="TimeTableBox"
-                >
-                    <CheckBox
-                        contents={contents} setContent={setContent}
-                        id={0} isChecked={String(timeIndex).includes(0)}
-                        timeIndex={timeIndex} setTimeIndex={setTimeIndex}
-                    />
-                    <div
-                        className="TimeTableWord"
-                    >
-                        가능한 시간이 없음
-                    </div>
-                </div>
-                */}
-      </div>
-    );
+  if (data) {
+    if (isBrowser) {
+      return (
+        <div className="TimeTable">
+          {data.map((time, index) => (
+            <div key={time.id} className="TimeTableBox">
+              {index % 3 == 2 && index != data.length - 1 ? (
+                <div className="smallLine Line" />
+              ) : null}
+              <CheckBox
+                contents={contents}
+                setContent={setContent}
+                id={time.id}
+                isChecked={String(timeIndex).includes(time.id)}
+                timeIndex={timeIndex}
+                setTimeIndex={setTimeIndex}
+              />
+              <div className="TimeTableWord">{printTime(time.time)}</div>
+            </div>
+          ))}
+        </div>
+      );
+    } else if (isMobile) {
+      return (
+        <div className="MobileTimeTable">
+          {data.map((time, index) => (
+            <div key={time.id} className="MobileTimeTableBox">
+              {index % 3 == 2 && index != data.length - 1 ? (
+                <div className="smallLine Line" />
+              ) : null}
+              <CheckBox
+                contents={contents}
+                setContent={setContent}
+                id={time.id}
+                isChecked={String(timeIndex).includes(time.id)}
+                timeIndex={timeIndex}
+                setTimeIndex={setTimeIndex}
+              />
+              <div className="MobileTimeTableWord">{printTime(time.time)}</div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+  }
 };
 
 export default TimeTable;

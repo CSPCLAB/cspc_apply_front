@@ -1,4 +1,4 @@
-.black{
+.black {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,15 +14,15 @@
     src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf');
 }
 
-.fail_resultbox{
+.fail_resultbox {
     position: relative;
-    width: 1300px;
+    width: 100vw;
     height: 207px;
 
 }
 
-.fail_resultlen{
-    position: absolute;
+.fail_resultlen {
+    position: relative;
     top: 88px;
 
     font-weight: 700;
@@ -32,21 +32,21 @@
     color: #000000;
 }
 
-.fail_line{
+.fail_line {
     position: relative;
     width: 1300px;
     height: 0px;
     border: 1px solid #000000;
 }
 
-.fail_resultbox2{
+.fail_resultbox2 {
     position: relative;
     width: 1300px;
     height: 414px;
 
 }
 
-.fail_resultlen2{
+.fail_resultlen2 {
     position: relative;
     top: 88px;
     font-size: 24px;
@@ -63,7 +63,7 @@
 
 }
 
-.fail_resultlen3{
+.fail_resultlen3 {
     position: relative;
     top: 174px;
     font-size: 20px;

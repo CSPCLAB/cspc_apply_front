@@ -1,4 +1,4 @@
-.picFrame{
+.picFrame {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,14 +11,14 @@
     top: 0px;
 }
 
-.picIntro{
+.picIntro {
     position: absolute;
     width: 1299px;
     height: 71px;
     top: 153px;
 }
 
-.picIntro1{
+.picIntro1 {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -27,7 +27,7 @@
     line-height: 31px;
 }
 
-.picIntro2{
+.picIntro2 {
     position: absolute;
     left: 0px;
     top: 44px;
@@ -36,7 +36,7 @@
     line-height: 150%;
 }
 
-.sepLine{
+.sepLine {
     position: absolute;
     width: 1300px;
     height: 0px;

@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.browserApp {
+  min-width: 1920px;
+}
+
+.mobileApp {
+  width: 100vw;
+
+  /* overflow-x: hidden; */
+  /* overflow-y:visible; */
+}

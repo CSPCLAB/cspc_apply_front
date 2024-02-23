@@ -1,16 +1,18 @@
 .footer{
-    position: relative;
+    /* position: relative;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     padding-top: 501px;
 
     font-family: 'IBMPlexSans-Regular';
     font-style: normal;
 
-    flex-direction: column;
+    /* flex-direction: column; */
+
+    height: 260px;
 }
 
 .footerLine {
@@ -24,7 +26,16 @@
 .footerBox {
     position: relative;
 
-    width: 1300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    /* background: blue; */
+
+
+    /* width: 1300px; */
     height: 260px;
 }
 
@@ -76,11 +87,8 @@
     left: 989px;
 }
 
-.email {
-    top: 90px;
-    right: 0px;
-
-    text-align: right;
+.footerPadding{
+    padding-top: 501px;
 }
 
 .lined{

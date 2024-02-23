@@ -1,0 +1,350 @@
+/*랩실관리, 스터디/프로젝트, 선배찬스 부분*/
+/* .mobile_base_ {
+    
+} */
+
+.mainForm1_ {
+    /* max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto; */
+    margin-top: -7vh;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /*600*/
+    top: 0px;
+}
+
+.mainForm2_ {
+    position: relative;
+    width: 100%;
+    height: 423px;
+    top: 109px;
+}
+
+.form_ {
+    position: relative;
+    width: 100%;
+    height: 61px;
+}
+
+.introduce1-1_ {
+    position: absolute;
+    left: 0px;
+    /* width: 90%; */
+    font-weight: 700;
+    width: 100%;
+    font-size: 20px;
+    /*24*/
+    line-height: 150%;
+    /*31*/
+}
+
+.introduce1-2_ {
+    position: absolute;
+
+    left: 0px;
+    width: 100%;
+    top: 44px;
+    width: 100%;
+    /* width: 90%; */
+    font-weight: 500;
+    font-size: 18px;
+    /*18*/
+    line-height: 150%;
+}
+
+.introduce1-3_ {
+    position: absolute;
+    margin-top: 1vh;
+    width: 100%;
+    /*670*/
+    height: 81px;
+    left: 0px;
+    top: 75px;
+    /*58 + 17*/
+    font-weight: 400;
+    font-size: 12px;
+    /*18*/
+    line-height: 150%;
+    text-align: justify;
+}
+
+.line1_ {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    top: 164px;
+    border: 0.3px solid #000000;
+}
+
+.second_ {
+    top: 135px;
+    left: 0px;
+}
+
+.introduce2-1_ {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.introduce2-2_ {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 44px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.introduce2-3_ {
+    position: absolute;
+    width: 100%;
+    height: 81px;
+    left: 0px;
+    top: 75px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.line2_ {
+    position: relative;
+    width: 100%;
+    height: 0px;
+    top: 140px;
+    border: 0.3px solid #000000;
+}
+
+.third_ {
+    top: 250px;
+    left: 0px;
+}
+
+.introduce3-1_ {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.introduce3-2_ {
+    position: absolute;
+    margin-top: -1vh;
+    left: 0px;
+    top: 44px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.introduce3-3_ {
+    position: absolute;
+    margin-top: -1vh;
+    width: 100%;
+    height: 81px;
+    left: 0px;
+    top: 75px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: justify;
+}
+
+
+
+
+
+/*
+.introduceframe{
+    position: absolute;
+    height: 600px;
+    left: 16.15%;
+    right: 16.2%;
+    top: 248px;    
+}
+
+.introduceframe2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    width: 1300px;
+    height: 423px;
+    left: 0px;
+}
+
+.introduce1{
+    position: relative;
+    width: 1300px;
+    height: 81px; 
+    top: 366px;
+    left: 310px;
+}
+
+.introduce1-1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.introduce1-2{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 162px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.introduce1-3{
+    float: right;
+    position: absolute;
+    width: 670px;
+    height: 81px;
+    right: 0px;
+    top: 118px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);   
+}
+
+.line1{
+    margin-top: 464px; /*이건 잘 모르겠는데 임의로 해둔 것..
+    width: 1300px;
+    height: 0px;
+    margin-left: -24px; /*line1만 약간 오른쪽으로 치우치는 현상 발생.. -> 일단 이걸로 해결
+    flex: none;
+    flex-grow: 0;
+}
+
+
+.introduce2{
+    position: absolute;
+    width: 1300px;
+    height: 81px; 
+    top: 259px;
+    flex: none;
+    flex-grow: 0; 
+}
+
+.introduce2-1{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 259px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.introduce2-2{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 303px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.introduce2-3{
+    float: right;
+    position: absolute;
+    width: 670px;
+    height: 81px;
+    right: 0px;
+    top: 259px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.line2{
+    margin-top: 141px; 
+    width: 1300px;
+    height: 0px;
+    border: 0.3px solid #000000;
+    flex: none;
+    flex-grow: 0;
+}
+
+.introduce3{
+    position: absolute;
+    width: 1300px;
+    height: 81px; 
+    top: 259px;
+    flex: none;
+    flex-grow: 0; 
+}
+
+.introduce3-1{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 400px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.introduce3-2{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 444px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.introduce3-3{
+    float: right;
+    position: absolute;
+    width: 670px;
+    height: 81px;
+    right: 0px;
+    top: 400px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.line3{
+    margin-top: 141px; 
+    width: 1300px;
+    height: 0px;
+    border: 0.3px solid #000000;
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+}*/

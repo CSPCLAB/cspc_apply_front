@@ -35,9 +35,11 @@ const Doc_result_pass = ({ resume }) => {
           <br />
         </div>
         <div className="pass__picline">
-          <img src={imgMap} />
+          <img src={"https://dev.cspc.me/media/result_map.png"} />
           <div className="pass__picline_spot">
-            <img src={imgSpot} />
+            <img
+              src={"https://dev.cspc.me/media/result_map-marker-filled.png"}
+            />
           </div>
         </div>
       </div>

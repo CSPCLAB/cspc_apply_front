@@ -1,24 +1,24 @@
 /*랩실관리, 스터디/프로젝트, 선배찬스 부분*/
-.mainForm1{
+.mainForm1 {
     position: relative;
     height: 600px;
     top: 0px;
 }
 
-.mainForm2{
+.mainForm2 {
     position: relative;
     width: 1300px;
     height: 423px;
     top: 159px;
 }
 
-.form{
+.form {
     position: relative;
     width: 1300px;
     height: 81px;
 }
 
-.introduce1-1{
+.introduce1-1 {
     position: absolute;
     left: 0px;
     font-weight: 700;
@@ -26,7 +26,7 @@
     line-height: 31px;
 }
 
-.introduce1-2{
+.introduce1-2 {
     position: absolute;
     left: 0px;
     top: 44px;
@@ -35,7 +35,7 @@
     line-height: 150%;
 }
 
-.introduce1-3{
+.introduce1-3 {
     position: absolute;
     width: 670px;
     height: 81px;
@@ -47,7 +47,7 @@
     text-align: justify;
 }
 
-.line1{
+.line1 {
     position: absolute;
     width: 1300px;
     height: 0px;
@@ -55,12 +55,12 @@
     border: 0.3px solid #000000;
 }
 
-.second{
+.second {
     top: 60px;
     left: 0px;
 }
 
-.introduce2-1{
+.introduce2-1 {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -69,7 +69,7 @@
     line-height: 31px;
 }
 
-.introduce2-2{
+.introduce2-2 {
     position: absolute;
     left: 0px;
     top: 44px;
@@ -78,7 +78,7 @@
     line-height: 150%;
 }
 
-.introduce2-3{
+.introduce2-3 {
     position: absolute;
     width: 670px;
     height: 81px;
@@ -90,7 +90,7 @@
     text-align: justify;
 }
 
-.line2{
+.line2 {
     position: absolute;
     width: 1300px;
     height: 0px;
@@ -98,21 +98,21 @@
     border: 0.3px solid #000000;
 }
 
-.third{
+.third {
     top: 121px;
     left: 0px;
 }
 
-.introduce3-1{
+.introduce3-1 {
     position: absolute;
     left: 0px;
     top: 0px;
     font-weight: 700;
     font-size: 24px;
-    line-height: 31px; 
+    line-height: 31px;
 }
 
-.introduce3-2{
+.introduce3-2 {
     position: absolute;
     left: 0px;
     top: 44px;
@@ -121,7 +121,7 @@
     line-height: 150%;
 }
 
-.introduce3-3{
+.introduce3-3 {
     position: absolute;
     width: 670px;
     height: 81px;

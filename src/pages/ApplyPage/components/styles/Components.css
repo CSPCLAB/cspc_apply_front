@@ -7,6 +7,15 @@
     align-items: center;
 }
 
+.MobileWriteApplicationStyle {
+    position: relative;
+
+    height: 48px;
+
+
+    align-items: center;
+}
+
 .WriteApplicationWordStyle {
     position: absolute;
 
@@ -18,6 +27,16 @@
 
     color: #000000;
 }
+
+.MobileWriteApplicationWordStyle {
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+
+    color: #000000;
+}
+
 
 .StepStyle {
     display: flex;
@@ -31,6 +50,19 @@
 
     width: 433.33px;
     height: 48px;
+
+    border-bottom: solid 1px #000000;
+}
+
+.MobileStepButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 433.33px; */
+    /* height: 48px; */
+    width: 30vw;
+    height: 5vh;
 
     border-bottom: solid 1px #000000;
 }
