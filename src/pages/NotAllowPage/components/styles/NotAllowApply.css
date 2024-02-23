@@ -58,3 +58,9 @@
     color: #000000;
 
 }
+
+.mobileNotAllow {
+    margin-top: 5vh;
+    width: 90vw;
+    align-items: center;
+}
