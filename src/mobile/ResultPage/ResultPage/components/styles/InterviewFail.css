@@ -11,18 +11,19 @@
 
 @font-face {
     font-family: 'IBMPlexSans-Regular';
-    src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf');
+    /* src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf'); */
+    src: url('../../../../../assets/fonts/IBMPlexSans-Regular.ttf')
 }
 
 .fail_resultbox {
     position: relative;
-    width: 100vw;
+    width: 1300px;
     height: 207px;
 
 }
 
 .fail_resultlen {
-    position: relative;
+    position: absolute;
     top: 88px;
 
     font-weight: 700;

@@ -11,18 +11,19 @@
 
 @font-face {
     font-family: 'IBMPlexSans-Regular';
-    src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf');
+    /* src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf'); */
+    src: url('../../../../../assets/fonts/IBMPlexSans-Regular.ttf')
 }
 
-.fail_resultbox {
+.pass_resultbox {
     position: relative;
-    width: 100vw;
+    width: 1300px;
     height: 207px;
 
 }
 
-.fail_resultlen {
-    position: relative;
+.pass_resultlen {
+    position: absolute;
     top: 88px;
 
     font-weight: 700;
@@ -32,21 +33,21 @@
     color: #000000;
 }
 
-.fail_line {
+.pass_line {
     position: relative;
     width: 1300px;
     height: 0px;
     border: 1px solid #000000;
 }
 
-.fail_resultbox2 {
+.pass_resultbox2 {
     position: relative;
     width: 1300px;
     height: 414px;
 
 }
 
-.fail_resultlen2 {
+.pass_resultlen2 {
     position: relative;
     top: 88px;
     font-size: 24px;
@@ -63,7 +64,7 @@
 
 }
 
-.fail_resultlen3 {
+.pass_resultlen3 {
     position: relative;
     top: 174px;
     font-size: 20px;

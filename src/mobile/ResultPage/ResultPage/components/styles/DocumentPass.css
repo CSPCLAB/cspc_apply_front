@@ -1,0 +1,130 @@
+.black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 75px;
+    flex-direction: column;
+    position: relative;
+    font-family: 'IBMPlexSans-Regular';
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSans-Regular';
+    /* src: url('../../../../assets/fonts/IBMPlexSans-Regular.ttf'); */
+    src: url('../../../../../assets/fonts/IBMPlexSans-Regular.ttf')
+}
+
+.pass__resultbox {
+    position: relative;
+    width: 1300px;
+    height: 207px;
+
+}
+
+.pass__resultlen {
+    position: absolute;
+    top: 88px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #000000;
+}
+
+.pass__line {
+    position: relative;
+    width: 1300px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+
+.pass__resultbox2 {
+    position: relative;
+    width: 1300px;
+    height: 986px;
+}
+
+.pass__resultlen1 {
+    position: relative;
+    top: 88px;
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 700;
+
+    text-align: center;
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.pass__resultlen2 {
+    position: relative;
+    top: 174px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+
+    text-align: center;
+    color: #000000;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.pass__resultlen3 {
+    position: relative;
+    top: 234px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+
+    text-align: center;
+    color: #000000;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.pass__resultlen4 {
+    position: relative;
+    top: 300px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #000000;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.pass__picline {
+    position: relative;
+    top: 340px;
+    width: 584px;
+    height: 456px;
+    border-radius: 10px;
+    margin: 0px auto;
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+.pass__picline_spot {
+    position: absolute;
+    top: 0.3%;
+    left: 34.5%;
+    width: 54px;
+    height: 54px;
+
+}

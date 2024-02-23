@@ -16,7 +16,7 @@ import Main from "./pages/MainPage/Main";
 import Apply from "./pages/ApplyPage/Apply";
 import Introduce from "./pages/IntroducePage/Introduce";
 import { Login } from "./pages/LoginPage/Login";
-import {ApplyGuide,Mobile_ApplyGuide} from "./pages/ApplyPage/components/Guide/ApplyGuide";
+import { ApplyGuide, Mobile_ApplyGuide } from "./pages/ApplyPage/components/Guide/ApplyGuide";
 import NotAllowApply from "pages/NotAllowPage/NotAllowApply";
 import { MiddleResult } from "pages/ResultPage/MiddleResult";
 import { FinalResult } from "pages/ResultPage/FinalResult";
@@ -24,6 +24,7 @@ import NotFound from "pages/NotFound";
 
 //mobile pages
 import Introduce2 from "./mobile/IntroducePage/Introduce";
+import MiddleResult2 from "./mobile/ResultPage/ResultPage/MiddleResult";
 
 // apis
 import { get_recruit_info } from "apis/get_recruit";
@@ -79,7 +80,7 @@ const RenderContent = () => {
           <Route path="/login" element={<Login />} />
 
           {/* <Route element={<ApplyBanner />}> */}
-          <Route path="/middle" element={<MiddleResult />} />
+          <Route path="/middle" element={<MiddleResult2 />} />
           <Route path="/final" element={<FinalResult />} />
           {/* </Route> */}
           <Route path="/applyGuide" element={<Mobile_ApplyGuide />} />
