@@ -9,9 +9,6 @@ import mapPin from "../../../assets/images/doing/map-pin.png";
 
 const Benefit = () => {
   return (
-    // <div className="main_">
-    // <div className="iconsMain_">
-    // <div className="mobile_base_">
     <div className="iconsFrame_">
       <div className="icon_ n1_">
         <img
@@ -55,9 +52,6 @@ const Benefit = () => {
         </div>
       </div>
     </div>
-    // </div>
-    // </div>
-    // </div>
   );
 };
 
