@@ -16,7 +16,7 @@ jobs:
             - name: Install and Build
               run: |
                   npm install
-                  npm run build
+                  CI=false npm run build
               env:
                   REACT_APP_GA_TRACKING_ID: ${{ secrets.REACT_APP_GA_TRACKING_ID }}
             # Step to clean the target directory on the server
