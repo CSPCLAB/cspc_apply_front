@@ -20,7 +20,7 @@
     /* height: 100%; */
 
     display: flex;
-    
+
     justify-content: center;
 }
 
@@ -31,7 +31,7 @@
     height: 1005px; */
 
     /* position: absolute; */
-    
+
 
     width: 100%;
 }
@@ -84,7 +84,7 @@
 
 }
 
-.ImgMainLetterBox_2_1{
+.ImgMainLetterBox_2_1 {
     display: inline-block;
 }
 
@@ -96,7 +96,8 @@
 
     text-align: left;
 
-    justify-content: center; /* 중앙 정렬 */
+    justify-content: center;
+    /* 중앙 정렬 */
     bottom: 220px;
 
 }
@@ -106,15 +107,15 @@
 
     /* width: 341px; */
     width: 20%;
-    
+
     display: inline-block;
     justify-content: left;
-    
+
 }
 
 .WhiteWord {
     color: #ffffff;
-    
+
 }
 
 .BlueWord {
@@ -124,7 +125,7 @@
 .ImgMain_1_Title {
     font-weight: 700;
     font-size: 24px;
-    line-height: 150%; 
+    line-height: 150%;
 }
 
 .ImgMain_2_Title {
@@ -147,18 +148,25 @@
 
 /* 모바일 장치를 위한 미디어 쿼리 */
 @media (max-width: 768px) {
-    .ImgMainBox, .ImgMainBlackBackgroundStyle, .ImgMainGrayFilterStyle {
-        height: 500px; /* 모바일 환경에서의 높이 조정 */
+
+    .ImgMainBox,
+    .ImgMainBlackBackgroundStyle,
+    .ImgMainGrayFilterStyle {
+        height: 500px;
+        /* 모바일 환경에서의 높이 조정 */
     }
+
     .ImgMain_3_Title {
-        font-size: 18px; /* 모바일에서 줄인 글씨 크기 */
+        font-size: 18px;
+        /* 모바일에서 줄인 글씨 크기 */
     }
 
     .ImgMain_3_Content {
-        font-size: 12px; /* 모바일에서 줄인 글씨 크기 */
+        font-size: 12px;
+        /* 모바일에서 줄인 글씨 크기 */
     }
-    .ImgMainLetterBox_3{
+
+    .ImgMainLetterBox_3 {
         width: 100%;
     }
 }
-
