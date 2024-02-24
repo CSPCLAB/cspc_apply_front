@@ -1,12 +1,12 @@
 /*아이콘 부분*/
 
-.iconsMain{
+.iconsMain {
     position: relative;
     width: 1298px;
     height: 250px;
 }
 
-.iconsFrame{
+.iconsFrame {
     position: absolute;
     display: flex;
     text-align: left;
@@ -19,24 +19,24 @@
     top: 67.5px;
 }
 
-.icon{
+.icon {
     position: relative;
     height: 100px;
 }
 
-.n1{
+.n1 {
     width: 210px;
 }
 
-.n2{
-    width: 210px;
+.n2 {
+    width: 220px;
 }
 
-.n3{
-    width: 290px;
+.n3 {
+    width: 220px;
 }
 
-.icon1{
+.icon1 {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -44,7 +44,7 @@
     top: 0px;
 }
 
-.icon2{
+.icon2 {
     position: absolute;
     left: 41px;
     font-weight: 700;
@@ -52,7 +52,7 @@
     line-height: 31px;
 }
 
-.icon3{
+.icon3 {
     position: absolute;
     top: 45px;
     font-weight: 400;

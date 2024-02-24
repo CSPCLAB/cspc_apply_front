@@ -106,14 +106,15 @@ const Apply = () => {
       );
       return false;
     }
-    if (
-      contents.introduce.length < 200 ||
-      contents.motivate.length < 100 ||
-      contents.to_do.length < 50
-    ) {
-      alert("글자 수가 부족합니다.");
-      return false;
-    }
+    // 글자 수 제한
+    // if (
+    //   contents.introduce.length < 200 ||
+    //   contents.motivate.length < 100 ||
+    //   contents.to_do.length < 50
+    // ) {
+    //   alert("글자 수가 부족합니다.");
+    //   return false;
+    // }
     return true;
   };
 
