@@ -1,4 +1,4 @@
-.mobileBackground{
+.mobileBackground {
     background-color: black;
     width: 100%;
     /* height: 515px;     */
@@ -8,14 +8,15 @@
 .background {
     background-color: black;
     width: 100%;
-    height: 515px;    
+    height: 515px;
 }
 
-.banner_text{
+.banner_text {
     padding-top: 10%;
     padding-left: 10%;
+    padding-bottom: 1.5%;
     /* padding-bottom: 5vh; */
-    color : white;
+    color: white;
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 700;
@@ -23,7 +24,7 @@
     line-height: 31px;
 }
 
-.banner_line{
+.banner_line {
     width: 100%;
 
     height: 0px;
@@ -31,7 +32,7 @@
     border-bottom: 0.3px solid #ffffff;
 }
 
-.banner_content{
+.banner_content {
     padding-top: 5vh;
 
     display: inline-flex;
@@ -39,7 +40,7 @@
     align-items: center;
 }
 
-.right{
+.right {
     object-fit: contain;
     height: 26px;
 }
@@ -52,7 +53,8 @@
     border-radius: 50%;
     display: flex;
 }
-.document_circle_process{
+
+.document_circle_process {
     background-color: rgb(136, 195, 210);
     /* filter: brightness(150%); */
     width: 235px;
@@ -69,8 +71,9 @@
     height: 235px;
     border-radius: 50%;
     display: flex;
-       
+
 }
+
 .interview_circle_process {
     background-color: rgb(111, 182, 200);
     width: 235px;
@@ -81,13 +84,14 @@
     display: flex;
 }
 
-.join_circle{
+.join_circle {
     background-color: rgba(85, 169, 190, 1);
     width: 235px;
     height: 235px;
     border-radius: 50%;
     display: flex;
 }
+
 .join_circle_process {
     background-color: rgba(85, 169, 190, 1);
     width: 235px;
@@ -100,16 +104,18 @@
 
 }
 
-.circle_content{
+.circle_content {
     display: flex;
-    color : white;
+    color: white;
     text-align: center;
     vertical-align: middle;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-}.process_text{
+
+}
+
+.process_text {
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 700;
@@ -119,7 +125,8 @@
 
     color: #FFFFFF;
 }
-.date_text{
+
+.date_text {
     padding-top: 10px;
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -131,7 +138,7 @@
     color: #FFFFFF;
 }
 
-.processing_circle{
+.processing_circle {
     border: 5px solid black;
     outline: 5px solid inherit;
 }
