@@ -6,8 +6,11 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { isBrowser, isMobile } from "react-device-detect";
 
 import "../styles/Banner.css";
+import { useAsync } from "react-async";
+import { get_recruit_info } from "../../apis/get_recruit";
 
 const Banner = () => {
+  const { data, error, isLoading } = useAsync({ promiseFn: get_recruit_info });
   const [curPage, setCurPage] = useState("main");
   const location = useLocation();
 
@@ -27,14 +30,36 @@ const Banner = () => {
     ) {
       setCurPage("지원하기");
     } else if (path.startsWith("/login")) {
-      setCurPage("지원안내");
+      setCurPage("login");
     } else {
       setCurPage("other");
     }
   }, [location]);
 
   if (curPage == "main" || curPage == "other") return null;
-  else {
+  else if (curPage == "login" && data) {
+    if (data.process !== "close") {
+      return null;
+    } else {
+      return (
+        <>
+          {isBrowser ? (
+            <Navbar expand="lg" className="applyBanner">
+              <Container>
+                <Nav className="applyWordBanner">지원안내</Nav>
+              </Container>
+            </Navbar>
+          ) : (
+            <Navbar expand="lg" className="mobileApplyBanner">
+              <Container>
+                <Nav className="applyWordBanner">지원안내</Nav>
+              </Container>
+            </Navbar>
+          )}
+        </>
+      );
+    }
+  } else {
     return (
       <>
         {isBrowser ? (
