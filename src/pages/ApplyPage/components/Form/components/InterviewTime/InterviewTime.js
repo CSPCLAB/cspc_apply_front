@@ -35,7 +35,7 @@ const InterviewTime = ({ contents, setContent, uploadContent }) => {
             <img src={star} className="star" />
           </div>
           <div className="InterviewContent InterviewSecondContent">
-            약 20분 정도 소요되며, 가능한 시간 모두 선택해주세요. 시간 배정이
+            약 15분 정도 소요되며, 가능한 시간 모두 선택해주세요. 시간 배정이
             어려울 경우 추후 연락드리겠습니다.
           </div>
         </div>
@@ -87,7 +87,7 @@ const InterviewTime = ({ contents, setContent, uploadContent }) => {
             <img src={star} className="star" />
           </div>
           <div className="InterviewContent InterviewSecondContent">
-            약 20분 정도 소요되며, 가능한 시간 모두 선택해주세요. 시간 배정이
+            약 15분 정도 소요되며, 가능한 시간 모두 선택해주세요. 시간 배정이
             어려울 경우 추후 연락드리겠습니다.
           </div>
         </div>
