@@ -62,7 +62,7 @@ const ImgIntroduce = () => {
 
           <div className="First num2">
             <img
-              src={"https://dev.cspc.me/media/intro_foodd.jpg"}
+              src={"https://dev.cspc.me/media/fooddd.jpg"}
               className="picture"
             />
             <div className="name1">회식</div>
