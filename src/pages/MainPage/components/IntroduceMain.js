@@ -16,21 +16,21 @@ const IntroduceMain = () => {
         <div className="IntroduceMainPictureBox_1">
           <div className="IntroduceMainPictureBox_1_1">
             <img
-              src={"https://dev.cspc.me/media/main_img_picnic.png"}
+              src={"https://apply.cspc.me/media/main_img_picnic.png"}
               className="ImgIntroduceStyle"
             />
             <div className="IntroduceMainLetterBox_2">소풍</div>
           </div>
           <div className="IntroduceMainPictureBox_1_1">
             <img
-              src={"https://dev.cspc.me/media/main_img_mt.png"}
+              src={"https://apply.cspc.me/media/main_img_mt.png"}
               className="ImgIntroduceStyle"
             />
             <div className="IntroduceMainLetterBox_2">MT</div>
           </div>
           <div className="IntroduceMainPictureBox_1_1">
             <img
-              src={"https://dev.cspc.me/media/main_img_party.png"}
+              src={"https://apply.cspc.me/media/main_img_party.png"}
               className="ImgIntroduceStyle"
             />
             <div className="IntroduceMainLetterBox_2">크리스마스 파티</div>

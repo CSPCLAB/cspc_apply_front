@@ -54,7 +54,7 @@ const ImgIntroduce = () => {
           <div className="First">
             <img
               className="picture"
-              src={"https://dev.cspc.me/media/intro_picnicc.jpg"}
+              src={"https://apply.cspc.me/media/intro_picnic2.jpg"}
             />
             <div className="name1">소풍</div>
             <div className="detail1">봄, 가을마다 함께 떠나는 소풍</div>
@@ -62,7 +62,7 @@ const ImgIntroduce = () => {
 
           <div className="First num2">
             <img
-              src={"https://dev.cspc.me/media/fooddd.jpg"}
+              src={"https://apply.cspc.me/media/fooddd.jpg"}
               className="picture"
             />
             <div className="name1">회식</div>
@@ -72,7 +72,7 @@ const ImgIntroduce = () => {
           <div className="First num3">
             <img
               className="picture"
-              src={"https://dev.cspc.me/media/intro_mt.jpg"}
+              src={"https://apply.cspc.me/media/intro_mt.jpg"}
             />
             <div className="name1">MT</div>
             <div className="detail1">방학에 함께 떠나는 MT</div>
@@ -81,7 +81,7 @@ const ImgIntroduce = () => {
           <div className="Second">
             <img
               className="picture"
-              src={"https://dev.cspc.me/media/intro_haek.png"}
+              src={"https://apply.cspc.me/media/intro_haek.png"}
             />
             <div className="name2">해커톤</div>
             <div className="detail2">함께 밤 새면서 달리는 해커톤</div>
@@ -90,7 +90,7 @@ const ImgIntroduce = () => {
           <div className="Second num2">
             <img
               className="picture"
-              src={"https://dev.cspc.me/media/intro_semina.jpg"}
+              src={"https://apply.cspc.me/media/intro_semina.jpg"}
             />
             <div className="name2">세미나</div>
             <div className="detail2">
@@ -101,7 +101,7 @@ const ImgIntroduce = () => {
           <div className="Second num3">
             <img
               className="picture"
-              src={"https://dev.cspc.me/media/intro_xmas.jpg"}
+              src={"https://apply.cspc.me/media/intro_xmas.jpg"}
             />
             <div className="name2">크리스마스 파티</div>
             <div className="detail2">CSPC 선후배가 함께 모여 즐기는 파티</div>

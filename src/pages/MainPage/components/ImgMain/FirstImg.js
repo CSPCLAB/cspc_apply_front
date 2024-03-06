@@ -33,7 +33,7 @@ const FirstImg = () => {
   return (
     <div className="ImgMainBox">
       <img
-        src={"https://dev.cspc.me/media/main_img_1.png"}
+        src={"https://apply.cspc.me/media/main_img_1.png"}
         className="ImgMainStyle"
       />
       <div className="ImgMainLetterBox_1 WhiteWord ImgMain_1_Title">

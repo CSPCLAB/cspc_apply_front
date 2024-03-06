@@ -24,21 +24,21 @@ const Culture = () => {
           <div className="Line1_1">
             <img
               className="img1"
-              src={"https://dev.cspc.me/media/applyguide_1.png"}
+              src={"https://apply.cspc.me/media/applyguide1.png"}
             />
             <div className="sen1">좁고 깊은 관계를 추구하는 사람</div>
           </div>
           <div className="Line1_2">
             <img
               className="img1"
-              src={"https://dev.cspc.me/media/applyguide_2.png"}
+              src={"https://apply.cspc.me/media/applyguide2.png"}
             />
             <div className="sen1 white">할 땐 하고 놀 땐 노는 사람</div>
           </div>
           <div className="Line1_3">
             <img
               className="img1"
-              src={"https://dev.cspc.me/media/applyguide_3.png"}
+              src={"https://apply.cspc.me/media/applyguide3.png"}
             />
             <div className="sen1">랩실에 자주 나올 수 있는 사람</div>
           </div>
@@ -48,21 +48,21 @@ const Culture = () => {
           <div className="Line2_1">
             <img
               className="img2"
-              src={"https://dev.cspc.me/media/applyguide_4.png"}
+              src={"https://apply.cspc.me/media/applyguide4.png"}
             />
             <div className="sen1 white">같이 눈사람 만들어 줄 사람</div>
           </div>
           <div className="Line2_2">
             <img
               className="img2"
-              src={"https://dev.cspc.me/media/applyguide_5.png"}
+              src={"https://apply.cspc.me/media/applyguide5.png"}
             />
             <div className="sen1">배우고자 하는 의지가 있는 사람</div>
           </div>
           <div className="Line2_3">
             <img
               className="img2"
-              src={"https://dev.cspc.me/media/applyguide_6.png"}
+              src={"https://apply.cspc.me/media/applyguide6.png"}
             />
             <div className="sen1 white">이걸 모두 읽고 있는 당신</div>
           </div>

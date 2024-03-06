@@ -31,7 +31,7 @@ const RecruitProcess = ({ recruit_data }) => {
                 </Row>
               </Col>
             </div>
-            <img src={right_vector} className={styles.right}></img>
+            <img src={"https://apply.cspc.me/media/applyguide_right_vector.png"} className={styles.right}></img>
             <div
               className={
                 recruit_data.process === "middle"
@@ -47,7 +47,7 @@ const RecruitProcess = ({ recruit_data }) => {
                 </Row>
               </Col>
             </div>
-            <img src={right_vector} className={styles.right}></img>
+            <img src={"https://apply.cspc.me/media/applyguide_right_vector.png"} className={styles.right}></img>
             <div
               className={
                 recruit_data.process === "final"

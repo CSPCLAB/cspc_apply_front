@@ -13,7 +13,7 @@ const Benefit = () => {
       <div className="icon_ n1_">
         <img
           className="icon1_"
-          src={"https://dev.cspc.me/media/intro_bookmark.png"}
+          src={"https://apply.cspc.me/media/intro_bookmark.png"}
         />
         <div className="icon2_">공용 전공 서적</div>
         <div className="icon3_">
@@ -27,7 +27,7 @@ const Benefit = () => {
       <div className="icon_ n2_">
         <img
           className="icon1_"
-          src={"https://dev.cspc.me/media/intro_desktop.png"}
+          src={"https://apply.cspc.me/media/intro_desktop.png"}
         />
         <div className="icon2_">서버 제공</div>
         <div className="icon3_">
@@ -41,7 +41,7 @@ const Benefit = () => {
       <div className="icon_ n3_">
         <img
           className="icon1_"
-          src={"https://dev.cspc.me/media/intro_map-pin.png"}
+          src={"https://apply.cspc.me/media/intro_map-pin.png"}
         />
         <div className="icon2_">관리자실</div>
         <div className="icon3_">

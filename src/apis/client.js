@@ -4,6 +4,8 @@ import axios from 'axios'
 /* 개발용 API */
 const API_SERVER_URL = 'https://apply.cspc.me/api'
 
+const API_IMAGE = "https://apply.cspc.me/media"
+
 export const Client = axios.create({
     baseURL: API_SERVER_URL,
 })
