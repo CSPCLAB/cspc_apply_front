@@ -51,7 +51,7 @@ const Doc_result_pass = ({ resume }) => {
           <Col>
             <Row>
               <img
-                src={"https://apply.cspc.me/media/result_map_M8FldVt.png"}
+                src={"https://apply.cspc.me/media/result_map.png"}
                 alt="Map"
                 // style={{ maxWidth: "100%", height: "auto" }}
               />
