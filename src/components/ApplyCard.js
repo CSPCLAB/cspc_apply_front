@@ -11,7 +11,7 @@ const MainApplyCard = () => {
     <div className="MainApplyCard">
       <div className="MainApplyCardBox">
         <img
-          src={"https://dev.cspc.me/media/main_apply_img.png"}
+          src={img}
           className="MainApplyCardImg"
         />
         <div className="MainApplyCardLetterBox WhiteWord">

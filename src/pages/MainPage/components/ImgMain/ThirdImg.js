@@ -11,7 +11,7 @@ const ThirdImg = () => {
   return (
     <div className="ImgMainBox">
       <img
-        src={"https://apply.cspc.me/media/main_img_3.png"}
+        src={img_3}
         className="ImgMainStyle"
       />
       <div className="ImgMainGrayFilterStyle">
