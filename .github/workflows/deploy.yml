@@ -1,56 +1,56 @@
 name: Code deploy to local server
 
 on:
-    push:
-        branches: ['main']
-    workflow_dispatch:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-            - uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
 
-            # Step to install dependencies and build your project
-            - name: Install and Build
-              run: |
-                  npm install
-                  CI=false npm run build
-              env:
-                  REACT_APP_GA_TRACKING_ID: ${{ secrets.REACT_APP_GA_TRACKING_ID }}
-            # Step to clean the target directory on the server
-            - name: Clean target directory
-              uses: appleboy/ssh-action@master
-              with:
-                  host: ${{ secrets.HOST }}
-                  username: ${{ secrets.USERNAME }}
-                  password: ${{ secrets.PASSWORD }}
-                  port: ${{ secrets.PORT }}
-                  script: |
-                      rm -rf ${{ secrets.SERVER_PATH }}/nginx/build
+      # Step to install dependencies and build your project
+      # - name: Install and Build
+      #   run: |
+      #       npm install
+      #       CI=false npm run build
+      #   env:
+      #       REACT_APP_GA_TRACKING_ID: ${{ secrets.REACT_APP_GA_TRACKING_ID }}
+      # # Step to clean the target directory on the server
+      # - name: Clean target directory
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #       host: ${{ secrets.HOST }}
+      #       username: ${{ secrets.USERNAME }}
+      #       password: ${{ secrets.PASSWORD }}
+      #       port: ${{ secrets.PORT }}
+      #       script: |
+      #           rm -rf ${{ secrets.SERVER_PATH }}/nginx/build
 
-            # Step to copy the build directory to the server
-            - name: Copy build directory to server
-              uses: appleboy/scp-action@master
-              with:
-                  host: ${{ secrets.HOST }}
-                  username: ${{ secrets.USERNAME }}
-                  password: ${{ secrets.PASSWORD }}
-                  port: ${{ secrets.PORT }}
-                  source: './build/'
-                  target: '${{ secrets.SERVER_PATH }}/nginx/'
+      # # Step to copy the build directory to the server
+      # - name: Copy build directory to server
+      #   uses: appleboy/scp-action@master
+      #   with:
+      #       host: ${{ secrets.HOST }}
+      #       username: ${{ secrets.USERNAME }}
+      #       password: ${{ secrets.PASSWORD }}
+      #       port: ${{ secrets.PORT }}
+      #       source: './build/'
+      #       target: '${{ secrets.SERVER_PATH }}/nginx/'
 
-            # Step to restart the server using SSH
-            - name: Restart server
-              uses: appleboy/ssh-action@master
-              with:
-                  host: ${{ secrets.HOST }}
-                  username: ${{ secrets.USERNAME }}
-                  password: ${{ secrets.PASSWORD }}
-                  port: ${{ secrets.PORT }}
-                  script: |
-                      cd ${{ secrets.SERVER_PATH }}
-                      docker-compose down
-                      git pull origin master
-                      docker-compose up --build -d
+      # # Step to restart the server using SSH
+      # - name: Restart server
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #       host: ${{ secrets.HOST }}
+      #       username: ${{ secrets.USERNAME }}
+      #       password: ${{ secrets.PASSWORD }}
+      #       port: ${{ secrets.PORT }}
+      #       script: |
+      #           cd ${{ secrets.SERVER_PATH }}
+      #           docker-compose down
+      #           git pull origin master
+      #           docker-compose up --build -d
