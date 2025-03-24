@@ -25,7 +25,7 @@ const MobileRecruitProcess = ({ recruit_data }) => {
                 {dateFormat(recruit_data.document_deadline, format)}
               </Row>
             </Col>
-            <img src={"https://apply.cspc.me/media/applyguide_right_vector.png"} className={styles.right}></img>
+            <img src={right_vector} className={styles.right}></img>
 
             <Col className={styles.circle_content}>
               <Row className={styles.process_text}>면접</Row>
@@ -34,7 +34,7 @@ const MobileRecruitProcess = ({ recruit_data }) => {
                 {dateFormat(recruit_data.interview_end_time, format)}
               </Row>
             </Col>
-            <img src={"https://apply.cspc.me/media/applyguide_right_vector.png"} className={styles.right}></img>
+            <img src={right_vector} className={styles.right}></img>
 
             <Col className={styles.circle_content}>
               <Row className={styles.process_text}>합류</Row>

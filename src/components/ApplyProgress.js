@@ -33,7 +33,7 @@ const ApplyProgress = () => {
             </div>
 
             <img
-              src={"https://dev.cspc.me/media/applyguide_right_vector.png"}
+              src={right_vector}
               className="right1"
             ></img>
 
@@ -46,7 +46,7 @@ const ApplyProgress = () => {
             </div>
 
             <img
-              src={"https://dev.cspc.me/media/applyguide_right_vector.png"}
+              src={right_vector}
               className="right2"
             ></img>
 
