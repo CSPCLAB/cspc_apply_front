@@ -28,4 +28,4 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: Sync to S3
-        run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+        run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET_NAME }} --delete && aws cloudfront create-invalidation --distribution-id E2KQNBB1YH1FBV --paths "/*"
