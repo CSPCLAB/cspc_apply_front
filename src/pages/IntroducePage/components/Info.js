@@ -13,8 +13,7 @@ const Info = () => {
             <div className="introduce1-2">CSPC LAB은 실습실을 관리합니다.</div>
             <div className="introduce1-3">
               <div>
-                CSPC LAB이 관리하는 실습실은 리치과학관 914호에 위치하고
-                있습니다.
+                CSPC LAB이 관리하는 실습실은 다산관 104A에 위치하고 있습니다.
               </div>
               <p>
                 실습수업이 원활하게 이루어질 수 있도록 수업 중 관리자실에서
@@ -49,7 +48,7 @@ const Info = () => {
               <p>
                 CSPC LAB은 1993년에 창설되어 다양한 분야로 진출한 선배들이
                 많습니다. 졸업한 선배로부터 진로에 대한 조언을 듣거나, 재학 중인
-                선배들에게도 대학 생활 꿀팁을 얻을 수 있습니다.
+                선배들에게도 대학 생활 팁을 얻을 수 있습니다.
               </p>
             </div>
             <div className="line3"></div>

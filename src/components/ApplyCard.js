@@ -10,12 +10,9 @@ const MainApplyCard = () => {
   return (
     <div className="MainApplyCard">
       <div className="MainApplyCardBox">
-        <img
-          src={"https://dev.cspc.me/media/main_apply_img.png"}
-          className="MainApplyCardImg"
-        />
+        <img src={img} className="MainApplyCardImg" />
         <div className="MainApplyCardLetterBox WhiteWord">
-          2024 1학기 신입부원 모집
+          2025 1학기 신입부원 모집
         </div>
         <GoToApply top="169px" left="1042px" />
       </div>

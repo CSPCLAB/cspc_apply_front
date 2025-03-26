@@ -10,16 +10,13 @@ import { Row, Col } from "react-bootstrap";
 const ThirdImg = () => {
   return (
     <div className="ImgMainBox">
-      <img
-        src={"https://dev.cspc.me/media/main_img_3.png"}
-        className="ImgMainStyle"
-      />
+      <img src={img_3} className="ImgMainStyle" />
       <div className="ImgMainGrayFilterStyle">
         <Row className="ImgMainLetterBox_3">
           <Col className="ImgMainLetterBox_3_1">
             <div className="WhiteWord ImgMain_3_Title">랩실관리</div>
             <div className="mt-2 WhiteWord ImgMain_3_Content">
-              리치과학관 914호를 관리합니다.
+              다산관 104, 105호를 관리합니다.
             </div>
           </Col>
           <Col className="ImgMainLetterBox_3_1">

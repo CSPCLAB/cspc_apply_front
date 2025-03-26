@@ -3,8 +3,8 @@ import React from "react";
 import "../../../IntroducePage/components/styles/Introduce.css";
 
 import Banner from "../../../../components/Layouts/Banner";
-import {Culture,Mobile_Culture} from "./Culture";
-import {ApplyProgress,Mobile_ApplyProgress} from "components/ApplyProgress";
+import { Culture, Mobile_Culture } from "./Culture";
+import { ApplyProgress, Mobile_ApplyProgress } from "components/ApplyProgress";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -28,4 +28,4 @@ const Mobile_ApplyGuide = () => {
   );
 };
 
-export {ApplyGuide, Mobile_ApplyGuide};
+export { ApplyGuide, Mobile_ApplyGuide };
