@@ -54,7 +54,7 @@ const Footer = () => {
           <Link to="/login">
             <div className="footerWord apply">지원하기</div>
           </Link>
-          <div className="footerWord school">서강대학교 리치과학관 914호</div>
+          <div className="footerWord school">다산관 104,105</div>
           <div className="footerWord help">
             문의{" "}
             {master === null

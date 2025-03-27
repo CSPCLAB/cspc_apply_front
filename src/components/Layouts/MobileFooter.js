@@ -63,7 +63,7 @@ const MobileFooter = () => {
             </Col>
           </Row>
           <Row className="mt-3">
-            <Col>서강대학교 리치과학관 914호 </Col>
+            <Col>다산관 104, 105 </Col>
           </Row>
           <Col>
             문의{" "}
