@@ -28,14 +28,11 @@ const ApplyProgress = () => {
               <div className="circleTitle1">서류</div>
               <div className="circleContent1">
                 {dateFormat(data.start_time, format)} ~{" "}
-                {dateFormat(data.document_deadline, format)} 24시
+                {dateFormat(data.document_deadline, format)}
               </div>
             </div>
 
-            <img
-              src={right_vector}
-              className="right1"
-            ></img>
+            <img src={right_vector} className="right1"></img>
 
             <div className="secondCircle">
               <div className="circleTitle2">면접</div>
@@ -45,10 +42,7 @@ const ApplyProgress = () => {
               </div>
             </div>
 
-            <img
-              src={right_vector}
-              className="right2"
-            ></img>
+            <img src={right_vector} className="right2"></img>
 
             <div className="thirdCircle">
               <div className="circleTitle2">합류</div>

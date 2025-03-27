@@ -13,10 +13,7 @@ const Benefit = () => {
       <div className="iconsMain">
         <div className="iconsFrame">
           <div className="icon n1">
-            <img
-              className="icon1"
-              src={bookmark}
-            />
+            <img className="icon1" src={bookmark} />
             <div className="icon2">공용 전공 서적</div>
             <div className="icon3">
               <ul>
@@ -27,10 +24,7 @@ const Benefit = () => {
           </div>
 
           <div className="icon n2">
-            <img
-              className="icon1"
-              src={desktop}
-            />
+            <img className="icon1" src={desktop} />
             <div className="icon2">서버 제공</div>
             <div className="icon3">
               <ul>
@@ -41,10 +35,7 @@ const Benefit = () => {
           </div>
 
           <div className="icon n3">
-            <img
-              className="icon1"
-              src={mapPin}
-            />
+            <img className="icon1" src={mapPin} />
             <div className="icon2">관리자실</div>
             <div className="icon3">
               <ul>

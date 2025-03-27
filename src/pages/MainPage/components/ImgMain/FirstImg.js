@@ -8,7 +8,8 @@ import "../styles/ImgMain.css";
 import { get_recruit_info } from "apis/get_recruit";
 
 const FirstImg = () => {
-  const [recruitTitle, setRecruitTitle] = useState(""); // 상태로 제목을 관리합니다.
+  const [recruitTitle, setRecruitTitle] =
+    useState("2025 1학기 신입 부원 모집 "); // 상태로 제목을 관리합니다.
 
   useEffect(() => {
     // 컴포넌트가 마운트될 때 API를 호출합니다.
@@ -32,10 +33,7 @@ const FirstImg = () => {
   }, []); // 빈 배열을 의존성 배열로 제공하여 컴포넌트가 마운트될 때만 실행되도록 합니다.
   return (
     <div className="ImgMainBox">
-      <img
-        src={img_1}
-        className="ImgMainStyle"
-      />
+      <img src={img_1} className="ImgMainStyle" />
       <div className="ImgMainLetterBox_1 WhiteWord ImgMain_1_Title">
         {recruitTitle}
       </div>
