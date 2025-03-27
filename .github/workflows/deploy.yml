@@ -1,42 +1,31 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Code deploy to local server
 
-# Controls when the workflow will run
 on:
   push:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: ["main"]
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
-      - name: Deploy and Run
-        uses: appleboy/ssh-action@master
+
+      # Step to install dependencies and build your project
+      - name: Install and Build
+        run: |
+          npm install
+          CI=false npm run build
+        env:
+          REACT_APP_GA_TRACKING_ID: ${{ secrets.REACT_APP_GA_TRACKING_ID }}
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          host: ${{secrets.HOST}}
-          username : ${{secrets.USERNAME}}
-          password : ${{secrets.PASSWORD}}
-          port : ${{secrets.PORT}}
-          script: |
-            cd ${{secrets.PATH}}
-            git pull origin main
-            npm install
-            npm run build
-            y | cp -arpf build/ ${{secrets.SERVER_PATH}}/nginx
-            cd ${{secrets.SERVER_PATH}}
-            docker-compose down
-            git pull origin master
-            docker-compose up --build -d
-            
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-2
+
+      - name: Sync to S3
+        run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET_NAME }} --delete && aws cloudfront create-invalidation --distribution-id E2KQNBB1YH1FBV --paths "/*"

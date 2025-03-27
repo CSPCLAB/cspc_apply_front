@@ -23,6 +23,7 @@ const Benefit = () => {
 
       <div className="icon_ n2_">
         <img className="icon1_" src={desktop} />
+
         <div className="icon2_">서버 제공</div>
         <div className="icon3_">
           <ul>
