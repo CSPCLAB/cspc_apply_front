@@ -9,7 +9,9 @@ const SecondImg = () => {
         <div className="WhiteWord">CSPCLAB은</div>
         <div className="BlueWord ImgMainLetterBox_2_1">소수정예</div>
         <div className="WhiteWord ImgMainLetterBox_2_1">를 지향하는</div>
-        <div className="WhiteWord">서강대학교 컴퓨터공학과 학회입니다.</div>
+        <div className="WhiteWord">
+          서강대학교 소프트웨어융합대학 학회입니다.
+        </div>
       </div>
     </div>
   );

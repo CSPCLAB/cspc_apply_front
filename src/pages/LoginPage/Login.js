@@ -13,23 +13,24 @@ export const Login = () => {
   const { data, error, isLoading } = useAsync({ promiseFn: get_recruit_info });
   useEffect(() => {
     // 브라우저가 해당 링크로 리다이렉트 되도록 설정
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeh931CQA2ucB52x_2ZRUwUshiZcyuUBlqgdYAmwQg71R9s3A/viewform?usp=sf_link";
+    window.location.href =
+      "https://docs.google.com/forms/d/e/1FAIpQLSeh931CQA2ucB52x_2ZRUwUshiZcyuUBlqgdYAmwQg71R9s3A/viewform?usp=sf_link";
   }, []);
 
-  if (isLoading) return "Loading...";
-  if (error) return `Something went wrong: ${error.message}`;
-  if (data) {
-    if (data.process == "close") return <Not_allow_apply />;
-    else
-      return (
-        <>
-          {isBrowser ? (
-            <RecruitProcess recruit_data={data} />
-          ) : (
-            <MobileRecruitProcess recruit_data={data} />
-          )}
-          <LoginForm state={data.process}></LoginForm>
-        </>
-      );
-  }
+  // if (isLoading) return "Loading...";
+  // if (error) return `Something went wrong: ${error.message}`;
+  // if (data) {
+  //   if (data.process == "close") return <Not_allow_apply />;
+  //   else
+  //     return (
+  //       <>
+  //         {isBrowser ? (
+  //           <RecruitProcess recruit_data={data} />
+  //         ) : (
+  //           <MobileRecruitProcess recruit_data={data} />
+  //         )}
+  //         <LoginForm state={data.process}></LoginForm>
+  //       </>
+  //     );
+  // }
 };
